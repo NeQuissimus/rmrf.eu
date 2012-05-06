@@ -1,46 +1,49 @@
-ass='year'>2011</span></time>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<footer>
-  <span class="categories">posted in <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/lion/'>Lion</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/mac/'>Mac</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/iphone/'>iPhone</a></span>
-</footer>
+  <title><![CDATA[Category: SSD | rm -rf /]]></title>
+  <link href="http://rmrf.eu/blog/categories/ssd/atom.xml" rel="self"/>
+  <link href="http://rmrf.eu/"/>
+  <updated>2012-05-05T23:21:47-04:00</updated>
+  <id>http://rmrf.eu/</id>
+  <author>
+    <name><![CDATA[Tim Steinbach]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-
-</article>
-
-
-
-<article>
   
-<h1><a href="http://nequissimus.github.com/rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers/">Add blank dock icons as spacers</a></h1>
-<time datetime="2011-02-12T11:00:00-05:00" pubdate><span class='month'>Feb</span> <span class='day'>12</span> <span class='year'>2011</span></time>
+  <entry>
+    <title type="html"><![CDATA[Comparing HDD and SSD]]></title>
+    <link href="http://rmrf.eu/blog/2010/09/14/Comparing-HDD-and-SSD/"/>
+    <updated>2010-09-14T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2010/09/14/Comparing-HDD-and-SSD</id>
+    <content type="html"><![CDATA[<p>The other day my SSD finally arrived. Immediately, I removed the standard 320 GB HDD that had been in my 13″ MacBook Pro since day one (<em>Western Digital WD3200BEVT</em>) and replaced it with my brand new <em>60GB OCZ Vertex 2 Series OCZSSD2-2VTXE60G SSD</em>.
+Of course, the enormous boost in speed is obvious. But I wanted numbers – facts!</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/lion/'>Lion</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/mac/'>Mac</a></span>
-</footer>
+<!--more-->
 
 
-</article>
+<p>So I ran a couple of UNIX commands under Mac OS X Snow Leopard (10.6.4).</p>
 
+<p>Turns out, the SSD is five to seven (!!!) times as fast as the good old HDD:</p>
 
+<p>Commands I used:</p>
 
-<article>
+<p>Writing a ~5 GB file
+<code>time dd if=/dev/zero of=/Users/timsteinbach/blubb2 bs=1024000 count=5000</code></p>
+
+<p>Reading that ~5 GB file
+<code>time dd of=/dev/zero if=/Users/timsteinbach/blubb2 bs=1024000 count=5000</code></p>
+
+<p><strong>Results HDD:</strong><br/>
+<code>(38499108 bytes/sec) (~41 MB/s) for writing</code><br/>
+<code>(42803917 bytes/sec) (~37 MB/s) for reading</code></p>
+
+<p><strong>Results SSD:</strong><br/>
+<code>(207697193 bytes/sec) (~198 MB/s) for writing</code><br/>
+<code>(280832960 bytes/sec) (~268 MB/s) for reading</code></p>
+]]></content>
+  </entry>
   
-<h1><a href="http://nequissimus.github.com/rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar/">Remove Spotlight icon from the menubar</a></h1>
-<time datetime="2011-01-12T11:00:00-05:00" pubdate><span class='month'>Jan</span> <span class='day'>12</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/lion/'>Lion</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/mac/'>Mac</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="http://nequissimus.github.com/rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing/">Disable Spotlight indexing</a></h1>
-<time datetime="2011-01-11T11:00:00-05:00" pubdate><span class='month'>Jan</span> <span class='day'>11</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a c
+</feed>
