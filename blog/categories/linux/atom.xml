@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | rm -rf /]]></title>
+  <link href="http://rmrf.eu/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://rmrf.eu/"/>
+  <updated>2012-05-05T22:56:32-04:00</updated>
+  <id>http://rmrf.eu/</id>
+  <author>
+    <name><![CDATA[Tim Steinbach]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Transparent background for icons]]></title>
+    <link href="http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/"/>
+    <updated>2012-04-22T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons</id>
+    <content type="html"><![CDATA[<p>Using xfce, most of the themes available customize the way your desktop icons look, but almost all of them add some kind of background to the icon label.
+If you like the background to be transparent, you need to create one file in your home folder.</p>
+
+<!--more-->
+
+
+<p>Add the following to <code>~/.gtkrc-2.0</code> (create it if it does not exist)</p>
+
+<p><div><script src='https://gist.github.com/2604543.js?file='></script>
+<noscript><pre><code>style &quot;xfdesktop-icon-view&quot; {
+
+XfdesktopIconView::label-alpha = 0
+font_name=&quot;Sans Bold&quot;
+
+base[NORMAL] = &quot;#ffffff&quot;
+base[SELECTED] = &quot;#ffffff&quot;
+base[ACTIVE] = &quot;#fefefe&quot;
+
+fg[NORMAL] = &quot;#ffffff&quot;
+fg[SELECTED] = &quot;#73B2D0&quot;
+fg[ACTIVE] = &quot;#D17100&quot;
+}
+widget_class &quot;*XfdesktopIconView*&quot; style &quot;xfdesktop-icon-view&quot;</code></pre></noscript></div>
+</p>
+
+<p>This will make the background transparent and change the font colour to white.
+The configuration is straight forward, so try out what looks best for you.
+Note that you might have to log out and back in for changes to take effect.</p>
+
+<p>Thanks to <a href="http://xubuntu.wordpress.com/2007/08/27/howto-remove-the-borders-of-your-desktop-icon-text" title="Xubuntu Blog">Xubuntu Blog</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Find UUID of a hard disk]]></title>
+    <link href="http://rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk/"/>
+    <updated>2010-10-24T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk</id>
+    <content type="html"><![CDATA[<p>The other day I added a new hard drive to my server. In order to make it available after each reboot (my home server shuts down over night) I needed to add it to my <code>/etc/fstab</code>.
+Since it is smarter to use UUIDs instead of the <code>/dev/sdX1</code> name, I tried to find my drive’s UUID.
+After a few searches in various manuals, here is how to easily find your UUID.</p>
+
+<p>This will display all the drive’s UUIDs and also of which type they are (e.g. ext3)</p>
+
+<p><code>blkid</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Log in to SSH automatically with a public key]]></title>
+    <link href="http://rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key/"/>
+    <updated>2010-09-17T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key</id>
+    <content type="html"><![CDATA[<p>I find myself logging in an out of servers a dozen times a day. Entering the secure password, which is a rather long one, can become quite annoying after some time.
+In order to authenticate with SSH it is also possible to use a pair of keys, a private and a public key.</p>
+
+<!--more-->
+
+
+<p>First, you will need a small tool called “PuTTY Key Generator” or simply “PuTTYgen” (e.g. found here).
+Hit the “Generate” button and move your mouse around until the progress bar is gone and you can see a seemingly random occurrence of symbols. This is your public key.
+Now hit the button labelled “Save private key” and save it to your hard drive.
+Log in to your server via SSH now and create a folder called <code>.ssh</code> (mind the dot) in your home folder, then create a file called <code>authorized_keys</code> and finally add the symbol soup that is your “Key” from the Key Generator into that file. Make sure you remove all line breaks. (I had two of them)</p>
+
+<p>Here are the Linux commands:</p>
+
+<pre><code>cd
+mkdir .ssh
+touch .ssh/authorized_keys
+nano .ssh/authorized_keys
+</code></pre>
+
+<p>When you want to exit nano, hit Ctrl+X, then Enter, then Y to save the file.
+After that, close your connection to the server.</p>
+
+<p>Assuming, you already have a connection session to your server with PuTTY, all you have to do is open that session and go to the Connection->SSH->Auth settings in order to add the private key you saved a moment ago. It is the setting at the very bottom.
+Also, go to Connection->Data and add your username to the input field at the top of that settings screen.
+Now save the session.
+When you double-click the session now, you will no longer have to enter your username or password and automatically be signed in.</p>
+
+<p>If you find double-clicking the session too annoying, too, try this:
+Create a shortcut to putty and add <code>-load XYZ</code> (replace XYZ with your session name in PuTTY) in the “target” field. The shortcut will then automatically load this session and since the session automatically logs you in, double-clicking the shortcut will be all you have to do from now on.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install Oracle 10g XE under Ubuntu 10.04 x86]]></title>
+    <link href="http://rmrf.eu/blog/2010/09/10/Install-Oracle-10g-XE-under-Ubuntu-10.04-x86/"/>
+    <updated>2010-09-10T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2010/09/10/Install-Oracle-10g-XE-under-Ubuntu-10.04-x86</id>
+    <content type="html"><![CDATA[<p>This is a short tutorial on how to install the free Oracle 10g XE under Ubuntu 10.04 x86.</p>
+
+<!--more-->
+
+
+<ol>
+<li>Create a swap file at least 1024 MB in size</li>
+<li>Add <code>deb http://oss.oracle.com/debian unstable main non-free to /etc/apt/sources.list</code></li>
+<li><p>Retrieve repository key with</p>
+
+<p> <code>sudo wget http://oss.oracle.com/el4/RPM-GPG-KEY-oracle  -O- | sudo apt-key add -</code>
+ <code>sudo apt-get update</code></p></li>
+<li><p><code>sudo apt-get install oracle-xe</code> to install Oracle XE</p></li>
+<li>run <code>sudo /etc/init.d/oracle-xe configure</code></li>
+<li>After the installation, add the code snippet below to your ~/.bash_aliases</li>
+<li>Run the sqlplus command with login sys as sysdba and the previously set password to connect to the database. Startup starts the database if it hasn’t been started automatically.</li>
+</ol>
+
+
+<p><em>~/.bash_aliases</em></p>
+
+<pre><code>export ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
+export PATH=$PATH:$ORACLE_HOME/bin
+export ORACLE_SID=XE
+</code></pre>
+
+<p>Thanks to <a href="http://blog.btmatthews.com/?p=187">Brian’s Stuff</a></p>
+]]></content>
+  </entry>
+  
+</feed>

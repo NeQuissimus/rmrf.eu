@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[rm -rf /]]></title>
+  <link href="http://rmrf.eu/atom.xml" rel="self"/>
+  <link href="http://rmrf.eu/"/>
+  <updated>2012-05-05T22:56:32-04:00</updated>
+  <id>http://rmrf.eu/</id>
+  <author>
+    <name><![CDATA[Tim Steinbach]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Transparent background for icons]]></title>
+    <link href="http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/"/>
+    <updated>2012-04-22T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons</id>
+    <content type="html"><![CDATA[<p>Using xfce, most of the themes available customize the way your desktop icons look, but almost all of them add some kind of background to the icon label.
+If you like the background to be transparent, you need to create one file in your home folder.</p>
+
+<!--more-->
+
+
+<p>Add the following to <code>~/.gtkrc-2.0</code> (create it if it does not exist)</p>
+
+<div><script src='https://gist.github.com/2604543.js?file='></script>
+<noscript><pre><code>style &quot;xfdesktop-icon-view&quot; {
+
+XfdesktopIconView::label-alpha = 0
+font_name=&quot;Sans Bold&quot;
+
+base[NORMAL] = &quot;#ffffff&quot;
+base[SELECTED] = &quot;#ffffff&quot;
+base[ACTIVE] = &quot;#fefefe&quot;
+
+fg[NORMAL] = &quot;#ffffff&quot;
+fg[SELECTED] = &quot;#73B2D0&quot;
+fg[ACTIVE] = &quot;#D17100&quot;
+}
+widget_class &quot;*XfdesktopIconView*&quot; style &quot;xfdesktop-icon-view&quot;</code></pre></noscript></div>
+
+
+<p>This will make the background transparent and change the font colour to white.
+The configuration is straight forward, so try out what looks best for you.
+Note that you might have to log out and back in for changes to take effect.</p>
+
+<p>Thanks to <a href="http://xubuntu.wordpress.com/2007/08/27/howto-remove-the-borders-of-your-desktop-icon-text" title="Xubuntu Blog">Xubuntu Blog</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Limit bandwidth]]></title>
+    <link href="http://rmrf.eu/blog/2012/04/19/Limit-bandwidth/"/>
+    <updated>2012-04-19T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2012/04/19/Limit-bandwidth</id>
+    <content type="html"><![CDATA[<p>If you are using a data plan that is capped, for example on 3G/4G, applications like Skype can have quite the impact on your usage.
+In order to contain these applications to a certain bandwidth instead of allowing them to use the entire bandwidth available, it is possible to limit your traffic.</p>
+
+<!--more-->
+
+
+<p>Note: Must be superuser for these commands, or use sudo.</p>
+
+<p>Create a new pipe limiting bandwidth to 100 KB/s</p>
+
+<div><script src='https://gist.github.com/2602124.js?file=1_create_pipe'></script>
+<noscript><pre><code>ipfw pipe 1 config bw 100KB</code></pre></noscript></div>
+
+
+<p>Add the pipe to all ports</p>
+
+<div><script src='https://gist.github.com/2602124.js?file=2_add_pipe_to_all_ports'></script>
+<noscript><pre><code>ipfw add 1 pipe 1 src-port any</code></pre></noscript></div>
+
+
+<p>Remove the pipe</p>
+
+<div><script src='https://gist.github.com/2602124.js?file=3_remove_pipe'></script>
+<noscript><pre><code>ipfw delete 00001</code></pre></noscript></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Start VMware Fusion VM without GUI]]></title>
+    <link href="http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/"/>
+    <updated>2012-02-17T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI</id>
+    <content type="html"><![CDATA[<p>If you have server operating systems in VMware Fusion and SSH into them, you do not need the VMware Fusion GUI.</p>
+
+<p>Here is how to start a VM “headless” (without any GUI).</p>
+
+<!--more-->
+
+
+
+
+<div><script src='https://gist.github.com/2604377.js?file='></script>
+<noscript><pre><code>/Library/Application\ Support/VMware\ Fusion/vmrun -T fusion start /Volumes/VMs/_Hadoop/Hadoop\ Master.vmwarevm/Hadoop\ Master.vmx nogui</code></pre></noscript></div>
+
+
+<p>Swapping “start” with “stop” will shut the VM down.
+Customize the paths to match your Fusion and VM locations.</p>
+
+<p>Source <a href="http://drchriswilson.blogspot.com/2009/12/vmware-fusion-3-headless.html">@Dr Chris Wilson</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Use Apple Gatekeeper with 10.7.3]]></title>
+    <link href="http://rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3/"/>
+    <updated>2012-02-16T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3</id>
+    <content type="html"><![CDATA[<p>In order to test your OSX application with the upcoming 10.8 “Mountain Lion” feature <em>Gatekeeper</em>, it can be enabled under 10.7.3.</p>
+
+<p>This can be done with a simple terminal command.</p>
+
+<div><script src='https://gist.github.com/2604389.js?file='></script>
+<noscript><pre><code>sudo spctl --enable</code></pre></noscript></div>
+
+
+<p>Replacing <strong>enable</strong> with <strong>disable</strong> will deactivate the application.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Use Boot Camp Assistant to create Windows 7 USB install drive]]></title>
+    <link href="http://rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive/"/>
+    <updated>2011-11-19T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive</id>
+    <content type="html"><![CDATA[<p>The other day I needed to reinstall a netbook we have in the house. Unfortunately, it did not have an optical drive. So I tried to use Mac OS X’s <strong>Boot Camp Assistant</strong> to create a Windows 7 USB drive to boot from.
+The option was grayed out for me, though.
+Here is how to enable the option for unsupported Macs.</p>
+
+<!--more-->
+
+
+<ol>
+<li>Open “System Information” and find your “Model Identifier”</li>
+<li>Open a Terminal</li>
+<li>Edit the following file as administrator (sudo nano)
+<code>/Applications/Utilities/Boot Camp Assistant.app/Contents/Info.plist</code></li>
+<li>Scroll to the bottom where you find an array of strings for “USBBootSupportedModels”</li>
+<li>Add your device according to the logic of the strings. (MB is a MacBook, MBA a MacBook Air, MBP a MacBook Pro, IM an iMac, MM a Mac Mini, MP a Mac Pro)</li>
+<li>The numbers can be found from your Model Identifier, but without the comma.</li>
+<li>Save the file and open Boot Camp Assistant</li>
+</ol>
+
+
+<p>If you did everything correctly, the option to create a Windows 7 USB install drive should now be available to you.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Disable hibernate mode and safe disk space]]></title>
+    <link href="http://rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space/"/>
+    <updated>2011-11-08T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space</id>
+    <content type="html"><![CDATA[<p>Recently, I have been trying to clean up my SSD that is in my MacBook Pro.
+One file that kept annoying me was <code>/private/var/vm/sleepimage</code>. I am almost exclusively on wall power and do not need the 8 GB file. In addition, my SSD is rather small. Simply deleting the sleepimage did not help, even if you do not use hibernate mode, it will come back. Here is how to get rid of it permanently.</p>
+
+<!--more-->
+
+
+<p>Turn off hibernate mode:</p>
+
+<div><script src='https://gist.github.com/2604446.js?file='></script>
+<noscript><pre><code>sudo pmset hibernatemode 0</code></pre></noscript></div>
+
+
+<p>Using the command with 1 instead of 0 turns it back on.</p>
+
+<p><strong>Caution: Should you run out of battery power, all the data stored in your RAM will be lost! Use this advice at your own risk.</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Add ICQ support to BeejiveIM]]></title>
+    <link href="http://rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM/"/>
+    <updated>2011-10-04T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM</id>
+    <content type="html"><![CDATA[<p>There’s an easy way to restore “ICQ support” inside <em>BeejiveIM</em> by fooling the application ;)</p>
+
+<!--more-->
+
+
+<p><strong>Note: This trick works on jailbroken devices only!</strong></p>
+
+<ol>
+<li>Install BeejiveIM and launch it a first time on your iDevice, then, and this is important, quit the application completely (–> remove it from the multitasking bar on your iDevice!)</li>
+<li>Download this file to your computer</li>
+<li>Open the file with a text editor (e.g. <em>TextWrangler for Mac</em>), find the phrase <strong>“Your_ICQ_Number_Here“</strong>, delete this text and enter your ICQ number. Don’t forget to save the changes.</li>
+<li>Now, we have to copy the file to its destination path. Use iExplorer or PhoneView to browse the Applications on your iDevice and enter the BeejiveIM folder. Then copy the file you’ve edited to the “Documents” folder by overwriting the existing one.</li>
+<li>You’re done. Launch BeejiveIM, click on your ICQ number and type in your password.</li>
+<li>Enjoy :)</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Unhide Library folder]]></title>
+    <link href="http://rmrf.eu/blog/2011/07/21/Unhide-Library-folder/"/>
+    <updated>2011-07-21T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2011/07/21/Unhide-Library-folder</id>
+    <content type="html"><![CDATA[<p>With OSX Lion (10.7) released, one may have noticed that by default the Library folder is hidden.
+This is how to have is accessible via Finder again.</p>
+
+<!--more-->
+
+
+<p>Open Terminal and type</p>
+
+<div><script src='https://gist.github.com/2604517.js?file=unhide_library'></script>
+<noscript><pre><code>chflags nohidden ~/Library</code></pre></noscript></div>
+
+
+<p>Changing nohidden to hidden reverses the process.</p>
+
+<div><script src='https://gist.github.com/2604517.js?file=hide_library'></script>
+<noscript><pre><code>chflags hidden ~/Library</code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Convert DMG to ISO and back]]></title>
+    <link href="http://rmrf.eu/blog/2011/04/04/Convert-DMG-to-ISO-and-back/"/>
+    <updated>2011-04-04T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2011/04/04/Convert-DMG-to-ISO-and-back</id>
+    <content type="html"><![CDATA[<p>Today I wanted to install a new VM. Unfortunately, VMware Fusion did not like that my installation medium was a DMG file. So I had to turn that file into an ISO. Here is how.</p>
+
+<!--more-->
+
+
+<p>DMG to ISO:</p>
+
+<div><script src='https://gist.github.com/2604570.js?file=dmg_to_iso'></script>
+<noscript><pre><code>hdiutil convert image.dmg -format UDTO -o image.iso</code></pre></noscript></div>
+
+
+<p>hdiutil adds .cdr to the file, but after renaming it, VMware Fusion would accept the image</p>
+
+<p>ISO to DMG:</p>
+
+<div><script src='https://gist.github.com/2604570.js?file=iso_to_dmg'></script>
+<noscript><pre><code>hdiutil convert image.iso -format UDRW -o image.dmg</code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Allow user to use sudo]]></title>
+    <link href="http://rmrf.eu/blog/2011/03/17/Allow-user-to-use-sudo/"/>
+    <updated>2011-03-17T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2011/03/17/Allow-user-to-use-sudo</id>
+    <content type="html"><![CDATA[<p>If you do not usually use your administrative account for everyday use (as you should!), but would still like to sometimes use it for a few administrative commands in Terminal.app, here is how to allow that.</p>
+
+<!--more-->
+
+
+<p>Open Terminal.app and log in to your admin account with</p>
+
+<pre><code>su USER
+</code></pre>
+
+<p>with USER being the account name of your admin user.
+Now enter the admin password and then this command</p>
+
+<pre><code>sudo visudo
+</code></pre>
+
+<p>Scroll down to where it says “# User privilege specification”.
+There at the bottom of the list of users you will need to add a line analog to this one</p>
+
+<pre><code>USER ALL=(ALL) ALL
+</code></pre>
+
+<p>Replace USER with the user that is supposed to be able to use sudo.
+Now save and quit (hit ESC, then :wq <Enter>). All done!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Change Mac OS X language]]></title>
+    <link href="http://rmrf.eu/blog/2011/03/16/Change-Mac-OS-X-language/"/>
+    <updated>2011-03-16T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2011/03/16/Change-Mac-OS-X-language</id>
+    <content type="html"><![CDATA[<p>Have you ever wanted to find out what OSX looks like in another language? Or maybe you are sick and tired of your native language and would like to try out English? Here is how to easily switch your entire OS to another language.</p>
+
+<div><script src='https://gist.github.com/2604613.js?file='></script>
+<noscript><pre><code>sudo &quot;/System/Library/CoreServices/Language Chooser.app/Contents/MacOS/Language Chooser&quot;</code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RDP force login]]></title>
+    <link href="http://rmrf.eu/blog/2011/03/11/RDP-force-login/"/>
+    <updated>2011-03-11T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2011/03/11/RDP-force-login</id>
+    <content type="html"><![CDATA[<p>If your terminal server tells you, that no more sessions are available, you can use this one:</p>
+
+<div><script src='https://gist.github.com/2604633.js?file='></script>
+<noscript><pre><code>mstsc /v:123.123.123.123 /admin</code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Disable iOS updates in iTunes]]></title>
+    <link href="http://rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes/"/>
+    <updated>2011-03-10T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes</id>
+    <content type="html"><![CDATA[<p>A lot of people out there use their iPhones with a jailbreak and maybe even an unlock active. Of course, those of you have to make sure that they will not update to an updated iOS version by accident.
+In order to make sure of that, here is a quick way to keep iTunes from updating your iDevice by accident.</p>
+
+<!--more-->
+
+
+
+
+<div><script src='https://gist.github.com/2604983.js?file=disable'></script>
+<noscript><pre><code>defaults write com.apple.iTunes personalized-installation-server-host /dev/null</code></pre></noscript></div>
+
+
+<p>If you do want to update, enable iTunes to do so by using</p>
+
+<div><script src='https://gist.github.com/2604983.js?file=enable'></script>
+<noscript><pre><code>defaults delete com.apple.iTunes personalized-installation-server-host</code></pre></noscript></div>
+
+
+<p>Thanks to <a href="http://pastebin.com/pXWYQRP9">an anonymous poster</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Add blank dock icons as spacers]]></title>
+    <link href="http://rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers/"/>
+    <updated>2011-02-12T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers</id>
+    <content type="html"><![CDATA[<p>Personally, I have a very strict order of icons in my OSX dock. But I am okay with all of them being next to each other.
+If you would like like to add a visual separation between certain “groups” of icons, here is how to add spacers.</p>
+
+<div><script src='https://gist.github.com/2604964.js?file='></script>
+<noscript><pre><code>defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type=&quot;spacer-tile&quot;;}'
+killall Dock</code></pre></noscript></div>
+
+
+<p>Thanks to <a href="http://twitter.com/Cocoia/status/36078449634316288">@Cocoia</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Remove Spotlight icon from the menubar]]></title>
+    <link href="http://rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar/"/>
+    <updated>2011-01-12T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar</id>
+    <content type="html"><![CDATA[<p>In combination with the command that deactivates Spotlight indexing, it is useful to hide the app’s icon from the menu bar as well. Here is how you achieve this.</p>
+
+<!--more-->
+
+
+<p>Do not allow any user but root to use the Search engine:</p>
+
+<div><script src='https://gist.github.com/2604946.js?file='></script>
+<noscript><pre><code>sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+
+killall SystemUIServer</code></pre></noscript></div>
+
+
+<p>In order to get the icon back, replace 600 with 755 in the first command.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Disable Spotlight indexing]]></title>
+    <link href="http://rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing/"/>
+    <updated>2011-01-11T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing</id>
+    <content type="html"><![CDATA[<p>If you have no use for Spotlight or are using an alternative product, here is how to disable indexing under Snow Leopard.</p>
+
+<p>Turn indexing off:</p>
+
+<div><script src='https://gist.github.com/2604905.js?file=disable'></script>
+<noscript><pre><code>sudo mdutil -a -i off</code></pre></noscript></div>
+
+
+<p>Turn indexing back on:</p>
+
+<div><script src='https://gist.github.com/2604905.js?file=enable'></script>
+<noscript><pre><code>sudo mdutil -a -i on</code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Disabling iOS backups via Terminal]]></title>
+    <link href="http://rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal/"/>
+    <updated>2010-12-18T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal</id>
+    <content type="html"><![CDATA[<p>Lately, I just wanted to do a fast sync with iTunes and my iPhone but it started one of these annoying backups and I wanted to get rid of this.</p>
+
+<!--more-->
+
+
+<p>So here is a solution for Mac users, just put this command into Terminal.app and iTunes won’t do any backups of your iPhone / iPod Touch until you enable it again.</p>
+
+<div><script src='https://gist.github.com/2604888.js?file=disable'></script>
+<noscript><pre><code>defaults write com.apple.iTunes DeviceBackupsDisabled -bool true</code></pre></noscript></div>
+
+
+<p>For enabling the device backups again, enter</p>
+
+<div><script src='https://gist.github.com/2604888.js?file=enable'></script>
+<noscript><pre><code>defaults write com.apple.iTunes DeviceBackupsDisabled -bool false</code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Repair Cydia]]></title>
+    <link href="http://rmrf.eu/blog/2010/12/17/Repair-Cydia/"/>
+    <updated>2010-12-17T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2010/12/17/Repair-Cydia</id>
+    <content type="html"><![CDATA[<p>Today I friend of mine told me that his Cydia would not work anymore. It did not even start up, so we had to fix it remotely.
+Luckily, he had openSSH installed on his phone&#8230;</p>
+
+<!--more-->
+
+
+<p><strong>Attention: Only download packages that end in &#8220;iphoneos-arm.deb&#8221;</strong></p>
+
+<ol>
+<li>Go to <code>http://apt.saurik.com/debs/</code> and keep it open</li>
+<li>Download the latest versions of berkeleydb, curl, apt7-key, apt7-ssl, apt7-lib and apt7</li>
+<li>Use an SCP client to push all those deb files from your computer to the iPhone</li>
+<li>Log into your iPhone via SSH</li>
+<li>Install each package with <code>dpkg -i package.deb</code>, replacing package with the file name (you will need to install the packages in the same order I listed them)</li>
+<li>Once you have successfully installed all packages, you can use this command: <code>apt-get install –fix-broken</code> which will fix all your broken packages.</li>
+<li>Now Cydia should work again</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Merging text files]]></title>
+    <link href="http://rmrf.eu/blog/2010/12/04/Merging-text-files/"/>
+    <updated>2010-12-04T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2010/12/04/Merging-text-files</id>
+    <content type="html"><![CDATA[<p>Today we needed to merge multiple files into one long file.</p>
+
+<p>Here is how to do that easily by using the command line</p>
+
+<p><code>type C:folder*.txt  &gt;&gt; C:resultall.txt</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Delete a user via Terminal.app]]></title>
+    <link href="http://rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app/"/>
+    <updated>2010-11-04T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app</id>
+    <content type="html"><![CDATA[<p>Ever had the problem that somehow you had managed to create a user under Mac OS X which would not show up in the Preferences menu. But then when you try to create a new user with just that name, the machine tells you that there already is such a user?
+Here is how to delete a user via Terminal.app</p>
+
+<p><strong>Attention: Please make sure you use this command carefully as it can easily screw up your system if you have any typos in it.</strong></p>
+
+<div><script src='https://gist.github.com/2604859.js?file='></script>
+<noscript><pre><code>sudo dscl . -delete /Users/username</code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

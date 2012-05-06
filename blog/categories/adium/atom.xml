@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Adium | rm -rf /]]></title>
+  <link href="http://rmrf.eu/blog/categories/adium/atom.xml" rel="self"/>
+  <link href="http://rmrf.eu/"/>
+  <updated>2012-05-05T22:56:32-04:00</updated>
+  <id>http://rmrf.eu/</id>
+  <author>
+    <name><![CDATA[Tim Steinbach]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Recreate Adium transcript search index]]></title>
+    <link href="http://rmrf.eu/blog/2010/09/22/Recreate-Adium-transcript-search-index/"/>
+    <updated>2010-09-22T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2010/09/22/Recreate-Adium-transcript-search-index</id>
+    <content type="html"><![CDATA[<p>Last week I wanted to look for something in my Adium logs (they call them transcripts). I even knew who had sent me the advice, so I selected the person from my contacts and started typing into the search box.
+What happened? Absolutely nothing!</p>
+
+<!--more-->
+
+
+<p>I found that my search index had been corrupted. But where do you find Adium’s transcript search index?
+Doing this in Terminal helped me and Adium immediately began creating a new index:</p>
+
+<p><code>rm ~/Library/Caches/Adium/Default/*</code></p>
+
+<p>This deletes your old index (and cached images) which Adium immediately recognizes.
+After about three seconds (9 MB in 572 log files for me) Adium will have created a new index which should work smoothly.</p>
+
+<p><em>Edit:</em><br/>
+The guys from Adium just sent me this wiki article:
+<a href="http://trac.adium.im/wiki/BrokenTranscriptSearch">http://trac.adium.im/wiki/BrokenTranscriptSearch</a>
+It describes the exact files that will need to be deleted in Adium 1.3 (I just threw out the entire contents of the folder – e.g. avatars would have to be reloaded) and a command that takes care of this process in 1.4 and later.</p>
+]]></content>
+  </entry>
+  
+</feed>

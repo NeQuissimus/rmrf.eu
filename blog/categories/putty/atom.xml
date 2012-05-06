@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: PuTTY | rm -rf /]]></title>
+  <link href="http://rmrf.eu/blog/categories/putty/atom.xml" rel="self"/>
+  <link href="http://rmrf.eu/"/>
+  <updated>2012-05-05T22:56:32-04:00</updated>
+  <id>http://rmrf.eu/</id>
+  <author>
+    <name><![CDATA[Tim Steinbach]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[PuTTY - Automatically load a profile]]></title>
+    <link href="http://rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile/"/>
+    <updated>2010-10-05T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile</id>
+    <content type="html"><![CDATA[<p>Create a link to PuTTY.exe and add <code>-load PROFILE</code> after the last "" in the target field.
+Replace PROFILE with the name of your PuTTY profile that you created.</p>
+
+<p><strong>Hint:</strong>
+Combined with my articles on creating an SSH tunnel and the automatic connection via SSH with a public key, you can easily create a single shortcut that connects automatically and opens your tunnel so that you can surf the web more safely.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SSH tunnel - Windows]]></title>
+    <link href="http://rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/"/>
+    <updated>2010-10-04T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows</id>
+    <content type="html"><![CDATA[<p>After explaining the SSH tunnel for Mac, here is the Windows version.</p>
+
+<p>(from the Mac entry)</p>
+
+<blockquote><p>Have you ever been stuck behind a corporate firewall? (Or at school?)
+It is usually fairly easy to bypass those systems using an SSH tunnel. All you need to have is a server on the Internet that allows you to log in via SSH.</p></blockquote>
+
+<!--more-->
+
+
+<p>Get a copy of PuTTY for Windows and open it.
+First, enter your server data such as IP address and port.
+Go to Connection – SSH – Tunnels and enter a port as “Source Port” (eg. 8888) and an asterisk (*) as destination.
+Then switch to Dynamic and hit “Add”.
+Then go back to your basic options and save your profile under any name.</p>
+
+<p>As soon as you open the connection and keep it open with PuTTY you can change your browser’s proxy settings to localhost:8888 and surf the Internet through that SSH tunnel.
+Since all the browsers work differently under Windows, please use Google to find out how to change the proxy settings for your particular browser.</p>
+]]></content>
+  </entry>
+  
+</feed>

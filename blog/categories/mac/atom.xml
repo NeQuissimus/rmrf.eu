@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Mac | rm -rf /]]></title>
+  <link href="http://rmrf.eu/blog/categories/mac/atom.xml" rel="self"/>
+  <link href="http://rmrf.eu/"/>
+  <updated>2012-05-05T22:56:32-04:00</updated>
+  <id>http://rmrf.eu/</id>
+  <author>
+    <name><![CDATA[Tim Steinbach]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Limit bandwidth]]></title>
+    <link href="http://rmrf.eu/blog/2012/04/19/Limit-bandwidth/"/>
+    <updated>2012-04-19T11:00:00-04:00</updated>
+    <id>http://rmrf.eu/blog/2012/04/19/Limit-bandwidth</id>
+    <content type="html"><![CDATA[<p>If you are using a data plan that is capped, for example on 3G/4G, applications like Skype can have quite the impact on your usage.
+In order to contain these applications to a certain bandwidth instead of allowing them to use the entire bandwidth available, it is possible to limit your traffic.</p>
+
+<!--more-->
+
+
+<p>Note: Must be superuser for these commands, or use sudo.</p>
+
+<p>Create a new pipe limiting bandwidth to 100 KB/s
+<div><script src='https://gist.github.com/2602124.js?file=1_create_pipe'></script>
+<noscript><pre><code>ipfw pipe 1 config bw 100KB</code></pre></noscript></div>
+</p>
+
+<p>Add the pipe to all ports
+<div><script src='https://gist.github.com/2602124.js?file=2_add_pipe_to_all_ports'></script>
+<noscript><pre><code>ipfw add 1 pipe 1 src-port any</code></pre></noscript></div>
+</p>
+
+<p>Remove the pipe
+<div><script src='https://gist.github.com/2602124.js?file=3_remove_pipe'></script>
+<noscript><pre><code>ipfw delete 00001</code></pre></noscript></div>
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Start VMware Fusion VM without GUI]]></title>
+    <link href="http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/"/>
+    <updated>2012-02-17T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI</id>
+    <content type="html"><![CDATA[<p>If you have server operating systems in VMware Fusion and SSH into them, you do not need the VMware Fusion GUI.</p>
+
+<p>Here is how to start a VM “headless” (without any GUI).</p>
+
+<!--more-->
+
+
+<p><div><script src='https://gist.github.com/2604377.js?file='></script>
+<noscript><pre><code>/Library/Application\ Support/VMware\ Fusion/vmrun -T fusion start /Volumes/VMs/_Hadoop/Hadoop\ Master.vmwarevm/Hadoop\ Master.vmx nogui</code></pre></noscript></div>
+</p>
+
+<p>Swapping “start” with “stop” will shut the VM down.
+Customize the paths to match your Fusion and VM locations.</p>
+
+<p>Source <a href="http://drchriswilson.blogspot.com/2009/12/vmware-fusion-3-headless.html">@Dr Chris Wilson</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Use Apple Gatekeeper with 10.7.3]]></title>
+    <link href="http://rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3/"/>
+    <updated>2012-02-16T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3</id>
+    <content type="html"><![CDATA[<p>In order to test your OSX application with the upcoming 10.8 “Mountain Lion” feature <em>Gatekeeper</em>, it can be enabled under 10.7.3.</p>
+
+<p>This can be done with a simple terminal command.</p>
+
+<p><div><script src='https://gist.github.com/2604389.js?file='></script>
+<noscript><pre><code>sudo spctl --enable</code></pre></noscript></div>
+</p>
+
+<p>Replacing <strong>enable</strong> with <strong>disable</strong> will deactivate the application.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Use Boot Camp Assistant to create Windows 7 USB install drive]]></title>
+    <link href="http://rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive/"/>
+    <updated>2011-11-19T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive</id>
+    <content type="html"><![CDATA[<p>The other day I needed to reinstall a netbook we have in the house. Unfortunately, it did not have an optical drive. So I tried to use Mac OS X’s <strong>Boot Camp Assistant</strong> to create a Windows 7 USB drive to boot from.
+The option was grayed out for me, though.
+Here is how to enable the option for unsupported Macs.</p>
+
+<!--more-->
+
+
+<ol>
+<li>Open “System Information” and find your “Model Identifier”</li>
+<li>Open a Terminal</li>
+<li>Edit the following file as administrator (sudo nano)
+<code>/Applications/Utilities/Boot Camp Assistant.app/Contents/Info.plist</code></li>
+<li>Scroll to the bottom where you find an array of strings for “USBBootSupportedModels”</li>
+<li>Add your device according to the logic of the strings. (MB is a MacBook, MBA a MacBook Air, MBP a MacBook Pro, IM an iMac, MM a Mac Mini, MP a Mac Pro)</li>
+<li>The numbers can be found from your Model Identifier, but without the comma.</li>
+<li>Save the file and open Boot Camp Assistant</li>
+</ol>
+
+
+<p>If you did everything correctly, the option to create a Windows 7 USB install drive should now be available to you.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Disable hibernate mode and safe disk space]]></title>
+    <link href="http://rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space/"/>
+    <updated>2011-11-08T11:00:00-05:00</updated>
+    <id>http://rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space</id>
+    <content type="html"><![CDATA[<p>Recently, I have been trying to clean up my SSD that is in my MacBook Pro.
+One file that kept annoying me was <code>/private/var/vm/sleepimage</code>. I am almost exclusively on wall power and do not need the 8 GB file. In addition, my SSD is rather small. Simply deleting the sleepimage did not help, even if you do not use hibernate mode, it will come back. Here is how to get rid of it permanently.</p>
+
+<!--more-->
+
+
+<p>Turn off hibernate mode:</p>
+
+<p><div><script src='https://gist.github.com/2604446.js?file='></script>
+<noscript><pre><code>sudo pmset hibernatemode 0</code></pre></noscript></div>
+</p>
+
+<p>Using the command with 1 instead of 0 turns it back on.</p>
+
+<p><strong>Caution: Should you run out of battery power, all the data stored in your RAM will be lost! Use this advice at your own risk.</strong></p>
+]]></content>
+  </entry>
+  
+</feed>
