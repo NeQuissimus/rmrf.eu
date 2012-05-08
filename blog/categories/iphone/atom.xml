@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: iPhone | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/iphone/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/iphone/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Add ICQ support to BeejiveIM]]></title>
-    <link href="http://rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM/"/>
     <updated>2011-10-04T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM</id>
     <content type="html"><![CDATA[<p>There’s an easy way to restore “ICQ support” inside <em>BeejiveIM</em> by fooling the application ;)</p>
 
 <!--more-->
@@ -39,9 +39,9 @@
   
   <entry>
     <title type="html"><![CDATA[Disable iOS updates in iTunes]]></title>
-    <link href="http://rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes/"/>
     <updated>2011-03-10T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes</id>
     <content type="html"><![CDATA[<p>A lot of people out there use their iPhones with a jailbreak and maybe even an unlock active. Of course, those of you have to make sure that they will not update to an updated iOS version by accident.
 In order to make sure of that, here is a quick way to keep iTunes from updating your iDevice by accident.</p>
 
@@ -64,9 +64,9 @@ In order to make sure of that, here is a quick way to keep iTunes from updating 
   
   <entry>
     <title type="html"><![CDATA[Disabling iOS backups via Terminal]]></title>
-    <link href="http://rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal/"/>
     <updated>2010-12-18T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal</id>
     <content type="html"><![CDATA[<p>Lately, I just wanted to do a fast sync with iTunes and my iPhone but it started one of these annoying backups and I wanted to get rid of this.</p>
 
 <!--more-->
@@ -88,9 +88,9 @@ In order to make sure of that, here is a quick way to keep iTunes from updating 
   
   <entry>
     <title type="html"><![CDATA[Repair Cydia]]></title>
-    <link href="http://rmrf.eu/blog/2010/12/17/Repair-Cydia/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/12/17/Repair-Cydia/"/>
     <updated>2010-12-17T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2010/12/17/Repair-Cydia</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/12/17/Repair-Cydia</id>
     <content type="html"><![CDATA[<p>Today I friend of mine told me that his Cydia would not work anymore. It did not even start up, so we had to fix it remotely.
 Luckily, he had openSSH installed on his phone...</p>
 

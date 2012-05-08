@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: PuTTY | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/putty/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/putty/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[PuTTY - Automatically load a profile]]></title>
-    <link href="http://rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile/"/>
     <updated>2010-10-05T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile</id>
     <content type="html"><![CDATA[<p>Create a link to PuTTY.exe and add <code>-load PROFILE</code> after the last "" in the target field.
 Replace PROFILE with the name of your PuTTY profile that you created.</p>
 
@@ -28,9 +28,9 @@ Combined with my articles on creating an SSH tunnel and the automatic connection
   
   <entry>
     <title type="html"><![CDATA[SSH tunnel - Windows]]></title>
-    <link href="http://rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/"/>
     <updated>2010-10-04T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows</id>
     <content type="html"><![CDATA[<p>After explaining the SSH tunnel for Mac, here is the Windows version.</p>
 
 <p>(from the Mac entry)</p>

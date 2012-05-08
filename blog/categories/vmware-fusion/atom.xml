@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: VMware Fusion | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/vmware-fusion/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/vmware-fusion/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Start VMware Fusion VM without GUI]]></title>
-    <link href="http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/"/>
     <updated>2012-02-17T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI</id>
     <content type="html"><![CDATA[<p>If you have server operating systems in VMware Fusion and SSH into them, you do not need the VMware Fusion GUI.</p>
 
 <p>Here is how to start a VM “headless” (without any GUI).</p>

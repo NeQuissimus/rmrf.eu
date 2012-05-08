@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: RDP | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/rdp/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/rdp/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[RDP force login]]></title>
-    <link href="http://rmrf.eu/blog/2011/03/11/RDP-force-login/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/03/11/RDP-force-login/"/>
     <updated>2011-03-11T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/03/11/RDP-force-login</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/03/11/RDP-force-login</id>
     <content type="html"><![CDATA[<p>If your terminal server tells you, that no more sessions are available, you can use this one:</p>
 
 <p><div><script src='https://gist.github.com/2604633.js?file='></script>

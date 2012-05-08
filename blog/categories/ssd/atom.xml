@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: SSD | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/ssd/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/ssd/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Comparing HDD and SSD]]></title>
-    <link href="http://rmrf.eu/blog/2010/09/14/Comparing-HDD-and-SSD/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/09/14/Comparing-HDD-and-SSD/"/>
     <updated>2010-09-14T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/09/14/Comparing-HDD-and-SSD</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/09/14/Comparing-HDD-and-SSD</id>
     <content type="html"><![CDATA[<p>The other day my SSD finally arrived. Immediately, I removed the standard 320 GB HDD that had been in my 13″ MacBook Pro since day one (<em>Western Digital WD3200BEVT</em>) and replaced it with my brand new <em>60GB OCZ Vertex 2 Series OCZSSD2-2VTXE60G SSD</em>.
 Of course, the enormous boost in speed is obvious. But I wanted numbers – facts!</p>
 

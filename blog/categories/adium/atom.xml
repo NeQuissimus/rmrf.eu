@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Adium | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/adium/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/adium/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Recreate Adium transcript search index]]></title>
-    <link href="http://rmrf.eu/blog/2010/09/22/Recreate-Adium-transcript-search-index/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/09/22/Recreate-Adium-transcript-search-index/"/>
     <updated>2010-09-22T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/09/22/Recreate-Adium-transcript-search-index</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/09/22/Recreate-Adium-transcript-search-index</id>
     <content type="html"><![CDATA[<p>Last week I wanted to look for something in my Adium logs (they call them transcripts). I even knew who had sent me the advice, so I selected the person from my contacts and started typing into the search box.
 What happened? Absolutely nothing!</p>
 

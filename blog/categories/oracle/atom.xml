@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Oracle | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/oracle/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/oracle/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Remote access to the Oracle 10g XE web interface]]></title>
-    <link href="http://rmrf.eu/blog/2010/09/11/Remote-access-to-the-Oracle-10g-XE-web-interface/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/09/11/Remote-access-to-the-Oracle-10g-XE-web-interface/"/>
     <updated>2010-09-11T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/09/11/Remote-access-to-the-Oracle-10g-XE-web-interface</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/09/11/Remote-access-to-the-Oracle-10g-XE-web-interface</id>
     <content type="html"><![CDATA[<p>I just spent an hour figuring out why my Oracle database would not let me connect to its web interface…</p>
 
 <!--more-->

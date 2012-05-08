@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[rm -rf /]]></title>
-  <link href="http://rmrf.eu/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Transparent background for icons]]></title>
-    <link href="http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/"/>
     <updated>2012-04-22T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/04/22/Transparent-background-for-icons</id>
     <content type="html"><![CDATA[<p>Using xfce, most of the themes available customize the way your desktop icons look, but almost all of them add some kind of background to the icon label.
 If you like the background to be transparent, you need to create one file in your home folder.</p>
 
@@ -53,9 +53,9 @@ Note that you might have to log out and back in for changes to take effect.</p>
   
   <entry>
     <title type="html"><![CDATA[Limit bandwidth]]></title>
-    <link href="http://rmrf.eu/blog/2012/04/19/Limit-bandwidth/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/04/19/Limit-bandwidth/"/>
     <updated>2012-04-19T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2012/04/19/Limit-bandwidth</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/04/19/Limit-bandwidth</id>
     <content type="html"><![CDATA[<p>If you are using a data plan that is capped, for example on 3G/4G, applications like Skype can have quite the impact on your usage.
 In order to contain these applications to a certain bandwidth instead of allowing them to use the entire bandwidth available, it is possible to limit your traffic.</p>
 
@@ -86,9 +86,9 @@ In order to contain these applications to a certain bandwidth instead of allowin
   
   <entry>
     <title type="html"><![CDATA[Start VMware Fusion VM without GUI]]></title>
-    <link href="http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/"/>
     <updated>2012-02-17T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI</id>
     <content type="html"><![CDATA[<p>If you have server operating systems in VMware Fusion and SSH into them, you do not need the VMware Fusion GUI.</p>
 
 <p>Here is how to start a VM “headless” (without any GUI).</p>
@@ -111,9 +111,9 @@ Customize the paths to match your Fusion and VM locations.</p>
   
   <entry>
     <title type="html"><![CDATA[Use Apple Gatekeeper with 10.7.3]]></title>
-    <link href="http://rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3/"/>
     <updated>2012-02-16T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3</id>
     <content type="html"><![CDATA[<p>In order to test your OSX application with the upcoming 10.8 “Mountain Lion” feature <em>Gatekeeper</em>, it can be enabled under 10.7.3.</p>
 
 <p>This can be done with a simple terminal command.</p>
@@ -128,9 +128,9 @@ Customize the paths to match your Fusion and VM locations.</p>
   
   <entry>
     <title type="html"><![CDATA[Use Boot Camp Assistant to create Windows 7 USB install drive]]></title>
-    <link href="http://rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive/"/>
     <updated>2011-11-19T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive</id>
     <content type="html"><![CDATA[<p>The other day I needed to reinstall a netbook we have in the house. Unfortunately, it did not have an optical drive. So I tried to use Mac OS X’s <strong>Boot Camp Assistant</strong> to create a Windows 7 USB drive to boot from.
 The option was grayed out for me, though.
 Here is how to enable the option for unsupported Macs.</p>
@@ -156,9 +156,9 @@ Here is how to enable the option for unsupported Macs.</p>
   
   <entry>
     <title type="html"><![CDATA[Disable hibernate mode and safe disk space]]></title>
-    <link href="http://rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space/"/>
     <updated>2011-11-08T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space</id>
     <content type="html"><![CDATA[<p>Recently, I have been trying to clean up my SSD that is in my MacBook Pro.
 One file that kept annoying me was <code>/private/var/vm/sleepimage</code>. I am almost exclusively on wall power and do not need the 8 GB file. In addition, my SSD is rather small. Simply deleting the sleepimage did not help, even if you do not use hibernate mode, it will come back. Here is how to get rid of it permanently.</p>
 
@@ -179,9 +179,9 @@ One file that kept annoying me was <code>/private/var/vm/sleepimage</code>. I am
   
   <entry>
     <title type="html"><![CDATA[Add ICQ support to BeejiveIM]]></title>
-    <link href="http://rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM/"/>
     <updated>2011-10-04T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM</id>
     <content type="html"><![CDATA[<p>There’s an easy way to restore “ICQ support” inside <em>BeejiveIM</em> by fooling the application ;)</p>
 
 <!--more-->
@@ -203,9 +203,9 @@ One file that kept annoying me was <code>/private/var/vm/sleepimage</code>. I am
   
   <entry>
     <title type="html"><![CDATA[Unhide Library folder]]></title>
-    <link href="http://rmrf.eu/blog/2011/07/21/Unhide-Library-folder/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/07/21/Unhide-Library-folder/"/>
     <updated>2011-07-21T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2011/07/21/Unhide-Library-folder</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/07/21/Unhide-Library-folder</id>
     <content type="html"><![CDATA[<p>With OSX Lion (10.7) released, one may have noticed that by default the Library folder is hidden.
 This is how to have is accessible via Finder again.</p>
 
@@ -230,9 +230,9 @@ This is how to have is accessible via Finder again.</p>
   
   <entry>
     <title type="html"><![CDATA[Convert DMG to ISO and back]]></title>
-    <link href="http://rmrf.eu/blog/2011/04/04/Convert-DMG-to-ISO-and-back/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/04/04/Convert-DMG-to-ISO-and-back/"/>
     <updated>2011-04-04T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2011/04/04/Convert-DMG-to-ISO-and-back</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/04/04/Convert-DMG-to-ISO-and-back</id>
     <content type="html"><![CDATA[<p>Today I wanted to install a new VM. Unfortunately, VMware Fusion did not like that my installation medium was a DMG file. So I had to turn that file into an ISO. Here is how.</p>
 
 <!--more-->
@@ -258,9 +258,9 @@ This is how to have is accessible via Finder again.</p>
   
   <entry>
     <title type="html"><![CDATA[Allow user to use sudo]]></title>
-    <link href="http://rmrf.eu/blog/2011/03/17/Allow-user-to-use-sudo/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/03/17/Allow-user-to-use-sudo/"/>
     <updated>2011-03-17T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2011/03/17/Allow-user-to-use-sudo</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/03/17/Allow-user-to-use-sudo</id>
     <content type="html"><![CDATA[<p>If you do not usually use your administrative account for everyday use (as you should!), but would still like to sometimes use it for a few administrative commands in Terminal.app, here is how to allow that.</p>
 
 <!--more-->
@@ -290,9 +290,9 @@ Now save and quit (hit ESC, then :wq <Enter>). All done!</p>
   
   <entry>
     <title type="html"><![CDATA[Change Mac OS X language]]></title>
-    <link href="http://rmrf.eu/blog/2011/03/16/Change-Mac-OS-X-language/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/03/16/Change-Mac-OS-X-language/"/>
     <updated>2011-03-16T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2011/03/16/Change-Mac-OS-X-language</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/03/16/Change-Mac-OS-X-language</id>
     <content type="html"><![CDATA[<p>Have you ever wanted to find out what OSX looks like in another language? Or maybe you are sick and tired of your native language and would like to try out English? Here is how to easily switch your entire OS to another language.</p>
 
 <div><script src='https://gist.github.com/2604613.js?file='></script>
@@ -305,9 +305,9 @@ Now save and quit (hit ESC, then :wq <Enter>). All done!</p>
   
   <entry>
     <title type="html"><![CDATA[RDP force login]]></title>
-    <link href="http://rmrf.eu/blog/2011/03/11/RDP-force-login/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/03/11/RDP-force-login/"/>
     <updated>2011-03-11T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/03/11/RDP-force-login</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/03/11/RDP-force-login</id>
     <content type="html"><![CDATA[<p>If your terminal server tells you, that no more sessions are available, you can use this one:</p>
 
 <div><script src='https://gist.github.com/2604633.js?file='></script>
@@ -320,9 +320,9 @@ Now save and quit (hit ESC, then :wq <Enter>). All done!</p>
   
   <entry>
     <title type="html"><![CDATA[Disable iOS updates in iTunes]]></title>
-    <link href="http://rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes/"/>
     <updated>2011-03-10T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes</id>
     <content type="html"><![CDATA[<p>A lot of people out there use their iPhones with a jailbreak and maybe even an unlock active. Of course, those of you have to make sure that they will not update to an updated iOS version by accident.
 In order to make sure of that, here is a quick way to keep iTunes from updating your iDevice by accident.</p>
 
@@ -347,9 +347,9 @@ In order to make sure of that, here is a quick way to keep iTunes from updating 
   
   <entry>
     <title type="html"><![CDATA[Add blank dock icons as spacers]]></title>
-    <link href="http://rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers/"/>
     <updated>2011-02-12T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers</id>
     <content type="html"><![CDATA[<p>Personally, I have a very strict order of icons in my OSX dock. But I am okay with all of them being next to each other.
 If you would like like to add a visual separation between certain “groups” of icons, here is how to add spacers.</p>
 
@@ -364,9 +364,9 @@ killall Dock</code></pre></noscript></div>
   
   <entry>
     <title type="html"><![CDATA[Remove Spotlight icon from the menubar]]></title>
-    <link href="http://rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar/"/>
     <updated>2011-01-12T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar</id>
     <content type="html"><![CDATA[<p>In combination with the command that deactivates Spotlight indexing, it is useful to hide the app’s icon from the menu bar as well. Here is how you achieve this.</p>
 
 <!--more-->
@@ -386,9 +386,9 @@ killall SystemUIServer</code></pre></noscript></div>
   
   <entry>
     <title type="html"><![CDATA[Disable Spotlight indexing]]></title>
-    <link href="http://rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing/"/>
     <updated>2011-01-11T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing</id>
     <content type="html"><![CDATA[<p>If you have no use for Spotlight or are using an alternative product, here is how to disable indexing under Snow Leopard.</p>
 
 <p>Turn indexing off:</p>
@@ -409,9 +409,9 @@ killall SystemUIServer</code></pre></noscript></div>
   
   <entry>
     <title type="html"><![CDATA[Disabling iOS backups via Terminal]]></title>
-    <link href="http://rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal/"/>
     <updated>2010-12-18T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal</id>
     <content type="html"><![CDATA[<p>Lately, I just wanted to do a fast sync with iTunes and my iPhone but it started one of these annoying backups and I wanted to get rid of this.</p>
 
 <!--more-->
@@ -435,9 +435,9 @@ killall SystemUIServer</code></pre></noscript></div>
   
   <entry>
     <title type="html"><![CDATA[Repair Cydia]]></title>
-    <link href="http://rmrf.eu/blog/2010/12/17/Repair-Cydia/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/12/17/Repair-Cydia/"/>
     <updated>2010-12-17T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2010/12/17/Repair-Cydia</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/12/17/Repair-Cydia</id>
     <content type="html"><![CDATA[<p>Today I friend of mine told me that his Cydia would not work anymore. It did not even start up, so we had to fix it remotely.
 Luckily, he had openSSH installed on his phone&#8230;</p>
 
@@ -461,9 +461,9 @@ Luckily, he had openSSH installed on his phone&#8230;</p>
   
   <entry>
     <title type="html"><![CDATA[Merging text files]]></title>
-    <link href="http://rmrf.eu/blog/2010/12/04/Merging-text-files/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/12/04/Merging-text-files/"/>
     <updated>2010-12-04T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2010/12/04/Merging-text-files</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/12/04/Merging-text-files</id>
     <content type="html"><![CDATA[<p>Today we needed to merge multiple files into one long file.</p>
 
 <p>Here is how to do that easily by using the command line</p>
@@ -474,9 +474,9 @@ Luckily, he had openSSH installed on his phone&#8230;</p>
   
   <entry>
     <title type="html"><![CDATA[Delete a user via Terminal.app]]></title>
-    <link href="http://rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app/"/>
     <updated>2010-11-04T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app</id>
     <content type="html"><![CDATA[<p>Ever had the problem that somehow you had managed to create a user under Mac OS X which would not show up in the Preferences menu. But then when you try to create a new user with just that name, the machine tells you that there already is such a user?
 Here is how to delete a user via Terminal.app</p>
 

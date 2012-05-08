@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Cydia | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/cydia/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/cydia/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Repair Cydia]]></title>
-    <link href="http://rmrf.eu/blog/2010/12/17/Repair-Cydia/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/12/17/Repair-Cydia/"/>
     <updated>2010-12-17T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2010/12/17/Repair-Cydia</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/12/17/Repair-Cydia</id>
     <content type="html"><![CDATA[<p>Today I friend of mine told me that his Cydia would not work anymore. It did not even start up, so we had to fix it remotely.
 Luckily, he had openSSH installed on his phone...</p>
 

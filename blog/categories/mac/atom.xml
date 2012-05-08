@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Mac | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/mac/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/mac/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Limit bandwidth]]></title>
-    <link href="http://rmrf.eu/blog/2012/04/19/Limit-bandwidth/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/04/19/Limit-bandwidth/"/>
     <updated>2012-04-19T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2012/04/19/Limit-bandwidth</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/04/19/Limit-bandwidth</id>
     <content type="html"><![CDATA[<p>If you are using a data plan that is capped, for example on 3G/4G, applications like Skype can have quite the impact on your usage.
 In order to contain these applications to a certain bandwidth instead of allowing them to use the entire bandwidth available, it is possible to limit your traffic.</p>
 
@@ -45,9 +45,9 @@ In order to contain these applications to a certain bandwidth instead of allowin
   
   <entry>
     <title type="html"><![CDATA[Start VMware Fusion VM without GUI]]></title>
-    <link href="http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/"/>
     <updated>2012-02-17T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI</id>
     <content type="html"><![CDATA[<p>If you have server operating systems in VMware Fusion and SSH into them, you do not need the VMware Fusion GUI.</p>
 
 <p>Here is how to start a VM “headless” (without any GUI).</p>
@@ -68,9 +68,9 @@ Customize the paths to match your Fusion and VM locations.</p>
   
   <entry>
     <title type="html"><![CDATA[Use Apple Gatekeeper with 10.7.3]]></title>
-    <link href="http://rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3/"/>
     <updated>2012-02-16T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3</id>
     <content type="html"><![CDATA[<p>In order to test your OSX application with the upcoming 10.8 “Mountain Lion” feature <em>Gatekeeper</em>, it can be enabled under 10.7.3.</p>
 
 <p>This can be done with a simple terminal command.</p>
@@ -85,9 +85,9 @@ Customize the paths to match your Fusion and VM locations.</p>
   
   <entry>
     <title type="html"><![CDATA[Use Boot Camp Assistant to create Windows 7 USB install drive]]></title>
-    <link href="http://rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive/"/>
     <updated>2011-11-19T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive</id>
     <content type="html"><![CDATA[<p>The other day I needed to reinstall a netbook we have in the house. Unfortunately, it did not have an optical drive. So I tried to use Mac OS X’s <strong>Boot Camp Assistant</strong> to create a Windows 7 USB drive to boot from.
 The option was grayed out for me, though.
 Here is how to enable the option for unsupported Macs.</p>
@@ -113,9 +113,9 @@ Here is how to enable the option for unsupported Macs.</p>
   
   <entry>
     <title type="html"><![CDATA[Disable hibernate mode and safe disk space]]></title>
-    <link href="http://rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space/"/>
     <updated>2011-11-08T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space</id>
     <content type="html"><![CDATA[<p>Recently, I have been trying to clean up my SSD that is in my MacBook Pro.
 One file that kept annoying me was <code>/private/var/vm/sleepimage</code>. I am almost exclusively on wall power and do not need the 8 GB file. In addition, my SSD is rather small. Simply deleting the sleepimage did not help, even if you do not use hibernate mode, it will come back. Here is how to get rid of it permanently.</p>
 

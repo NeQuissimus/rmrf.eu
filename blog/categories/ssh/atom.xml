@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: SSH | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/ssh/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/ssh/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[SSH tunnel - Windows]]></title>
-    <link href="http://rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/"/>
     <updated>2010-10-04T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows</id>
     <content type="html"><![CDATA[<p>After explaining the SSH tunnel for Mac, here is the Windows version.</p>
 
 <p>(from the Mac entry)</p>
@@ -41,9 +41,9 @@ Since all the browsers work differently under Windows, please use Google to find
   
   <entry>
     <title type="html"><![CDATA[SSH tunnel - Mac]]></title>
-    <link href="http://rmrf.eu/blog/2010/10/03/SSH-tunnel-Mac/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/03/SSH-tunnel-Mac/"/>
     <updated>2010-10-03T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/10/03/SSH-tunnel-Mac</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/10/03/SSH-tunnel-Mac</id>
     <content type="html"><![CDATA[<p>Have you ever been stuck behind a corporate firewall? (Or at school?)
 It is usually fairly easy to bypass those systems using an SSH tunnel. All you need to have is a server on the Internet that allows you to log in via SSH.</p>
 
@@ -66,9 +66,9 @@ Now Safari will go through your SSH tunnel when surfing the web and all those fi
   
   <entry>
     <title type="html"><![CDATA[Log in to SSH automatically with a public key]]></title>
-    <link href="http://rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key/"/>
     <updated>2010-09-17T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key</id>
     <content type="html"><![CDATA[<p>I find myself logging in an out of servers a dozen times a day. Entering the secure password, which is a rather long one, can become quite annoying after some time.
 In order to authenticate with SSH it is also possible to use a pair of keys, a private and a public key.</p>
 

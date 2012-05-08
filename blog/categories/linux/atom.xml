@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Linux | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/linux/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Transparent background for icons]]></title>
-    <link href="http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/"/>
     <updated>2012-04-22T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/04/22/Transparent-background-for-icons</id>
     <content type="html"><![CDATA[<p>Using xfce, most of the themes available customize the way your desktop icons look, but almost all of them add some kind of background to the icon label.
 If you like the background to be transparent, you need to create one file in your home folder.</p>
 
@@ -53,9 +53,9 @@ Note that you might have to log out and back in for changes to take effect.</p>
   
   <entry>
     <title type="html"><![CDATA[Find UUID of a hard disk]]></title>
-    <link href="http://rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk/"/>
     <updated>2010-10-24T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk</id>
     <content type="html"><![CDATA[<p>The other day I added a new hard drive to my server. In order to make it available after each reboot (my home server shuts down over night) I needed to add it to my <code>/etc/fstab</code>.
 Since it is smarter to use UUIDs instead of the <code>/dev/sdX1</code> name, I tried to find my drive’s UUID.
 After a few searches in various manuals, here is how to easily find your UUID.</p>
@@ -68,9 +68,9 @@ After a few searches in various manuals, here is how to easily find your UUID.</
   
   <entry>
     <title type="html"><![CDATA[Log in to SSH automatically with a public key]]></title>
-    <link href="http://rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key/"/>
     <updated>2010-09-17T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key</id>
     <content type="html"><![CDATA[<p>I find myself logging in an out of servers a dozen times a day. Entering the secure password, which is a rather long one, can become quite annoying after some time.
 In order to authenticate with SSH it is also possible to use a pair of keys, a private and a public key.</p>
 
@@ -105,9 +105,9 @@ Create a shortcut to putty and add <code>-load XYZ</code> (replace XYZ with your
   
   <entry>
     <title type="html"><![CDATA[Install Oracle 10g XE under Ubuntu 10.04 x86]]></title>
-    <link href="http://rmrf.eu/blog/2010/09/10/Install-Oracle-10g-XE-under-Ubuntu-10.04-x86/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/09/10/Install-Oracle-10g-XE-under-Ubuntu-10.04-x86/"/>
     <updated>2010-09-10T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/09/10/Install-Oracle-10g-XE-under-Ubuntu-10.04-x86</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/09/10/Install-Oracle-10g-XE-under-Ubuntu-10.04-x86</id>
     <content type="html"><![CDATA[<p>This is a short tutorial on how to install the free Oracle 10g XE under Ubuntu 10.04 x86.</p>
 
 <!--more-->

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Windows | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/windows/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/windows/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[RDP force login]]></title>
-    <link href="http://rmrf.eu/blog/2011/03/11/RDP-force-login/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/03/11/RDP-force-login/"/>
     <updated>2011-03-11T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2011/03/11/RDP-force-login</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/03/11/RDP-force-login</id>
     <content type="html"><![CDATA[<p>If your terminal server tells you, that no more sessions are available, you can use this one:</p>
 
 <p><div><script src='https://gist.github.com/2604633.js?file='></script>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[Merging text files]]></title>
-    <link href="http://rmrf.eu/blog/2010/12/04/Merging-text-files/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/12/04/Merging-text-files/"/>
     <updated>2010-12-04T11:00:00-05:00</updated>
-    <id>http://rmrf.eu/blog/2010/12/04/Merging-text-files</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/12/04/Merging-text-files</id>
     <content type="html"><![CDATA[<p>Today we needed to merge multiple files into one long file.</p>
 
 <p>Here is how to do that easily by using the command line</p>
@@ -41,9 +41,9 @@
   
   <entry>
     <title type="html"><![CDATA[PuTTY - Automatically load a profile]]></title>
-    <link href="http://rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile/"/>
     <updated>2010-10-05T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile</id>
     <content type="html"><![CDATA[<p>Create a link to PuTTY.exe and add <code>-load PROFILE</code> after the last "" in the target field.
 Replace PROFILE with the name of your PuTTY profile that you created.</p>
 
@@ -54,9 +54,9 @@ Combined with my articles on creating an SSH tunnel and the automatic connection
   
   <entry>
     <title type="html"><![CDATA[SSH tunnel - Windows]]></title>
-    <link href="http://rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/"/>
     <updated>2010-10-04T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows</id>
     <content type="html"><![CDATA[<p>After explaining the SSH tunnel for Mac, here is the Windows version.</p>
 
 <p>(from the Mac entry)</p>
@@ -80,9 +80,9 @@ Since all the browsers work differently under Windows, please use Google to find
   
   <entry>
     <title type="html"><![CDATA[Log in to SSH automatically with a public key]]></title>
-    <link href="http://rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key/"/>
     <updated>2010-09-17T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key</id>
     <content type="html"><![CDATA[<p>I find myself logging in an out of servers a dozen times a day. Entering the secure password, which is a rather long one, can become quite annoying after some time.
 In order to authenticate with SSH it is also possible to use a pair of keys, a private and a public key.</p>
 

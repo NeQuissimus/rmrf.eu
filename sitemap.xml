@@ -1,151 +1,191 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://rmrf.eu/blog/2010/09/10/Install-Oracle-10g-XE-under-Ubuntu-10.04-x86/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/09/10/Install-Oracle-10g-XE-under-Ubuntu-10.04-x86/
+        </loc>
         <lastmod>2012-05-05T14:45:33-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rmrf.eu/blog/2010/09/11/Remote-access-to-the-Oracle-10g-XE-web-interface/
+            http://nequissimus.github.com/rmrf.eu/blog/2010/09/11/Remote-access-to-the-Oracle-10g-XE-web-interface/
         </loc>
         <lastmod>2012-05-05T14:49:20-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/09/14/Comparing-HDD-and-SSD/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2010/09/14/Comparing-HDD-and-SSD/</loc>
         <lastmod>2012-05-05T14:53:51-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/09/17/Log-in-to-SSH-automatically-with-a-public-key/
+        </loc>
         <lastmod>2012-05-05T14:56:24-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/09/21/Trigger-OS-X-maintenance-scripts/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/09/21/Trigger-OS-X-maintenance-scripts/
+        </loc>
         <lastmod>2012-05-05T14:59:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/09/22/Recreate-Adium-transcript-search-index/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/09/22/Recreate-Adium-transcript-search-index/
+        </loc>
         <lastmod>2012-05-05T15:01:38-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/09/28/Login-window-with-a-message/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/09/28/Login-window-with-a-message/
+        </loc>
         <lastmod>2012-05-05T15:04:08-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/09/29/Login-window-with-a-picture/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/09/29/Login-window-with-a-picture/
+        </loc>
         <lastmod>2012-05-05T15:05:42-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/09/30/Hide-users-from-login-window/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/09/30/Hide-users-from-login-window/
+        </loc>
         <lastmod>2012-05-05T15:10:10-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/10/03/SSH-tunnel-Mac/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2010/10/03/SSH-tunnel-Mac/</loc>
         <lastmod>2012-05-05T15:11:36-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/</loc>
         <lastmod>2012-05-05T15:15:11-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile/
+        </loc>
         <lastmod>2012-05-05T15:15:02-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/10/06/Rebuild-Spotlight-index/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2010/10/06/Rebuild-Spotlight-index/</loc>
         <lastmod>2012-05-05T15:16:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk/</loc>
         <lastmod>2012-05-05T15:17:49-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app/
+        </loc>
         <lastmod>2012-05-05T15:19:44-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/12/04/Merging-text-files/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2010/12/04/Merging-text-files/</loc>
         <lastmod>2012-05-05T15:21:16-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/12/17/Repair-Cydia/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2010/12/17/Repair-Cydia/</loc>
         <lastmod>2012-05-05T15:23:47-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2010/12/18/Disabling-iOS-backups-via-Terminal/
+        </loc>
         <lastmod>2012-05-05T15:25:59-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing/
+        </loc>
         <lastmod>2012-05-05T15:28:04-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar/
+        </loc>
         <lastmod>2012-05-05T15:30:20-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers/
+        </loc>
         <lastmod>2012-05-05T15:32:32-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2011/03/10/Disable-iOS-updates-in-iTunes/
+        </loc>
         <lastmod>2012-05-05T15:35:55-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/03/11/RDP-force-login/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2011/03/11/RDP-force-login/</loc>
         <lastmod>2012-05-05T14:34:28-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/03/16/Change-Mac-OS-X-language/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2011/03/16/Change-Mac-OS-X-language/</loc>
         <lastmod>2012-05-05T14:32:43-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/03/17/Allow-user-to-use-sudo/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2011/03/17/Allow-user-to-use-sudo/</loc>
         <lastmod>2012-05-05T14:28:51-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/04/04/Convert-DMG-to-ISO-and-back/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2011/04/04/Convert-DMG-to-ISO-and-back/
+        </loc>
         <lastmod>2012-05-05T14:28:47-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/07/21/Unhide-Library-folder/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2011/07/21/Unhide-Library-folder/</loc>
         <lastmod>2012-05-05T14:19:36-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2011/10/04/Add-ICQ-support-to-BeejiveIM/
+        </loc>
         <lastmod>2012-05-05T14:16:28-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2011/11/08/Disable-hibernate-mode-and-safe-disk-space/
+        </loc>
         <lastmod>2012-05-05T14:12:17-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive/
+            http://nequissimus.github.com/rmrf.eu/blog/2011/11/19/Use-Boot-Camp-Assistant-to-create-Windows-7-USB-install-drive/
         </loc>
         <lastmod>2012-05-05T14:12:16-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3/
+        </loc>
         <lastmod>2012-05-05T14:12:23-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/
+        </loc>
         <lastmod>2012-05-05T14:12:21-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2012/04/19/Limit-bandwidth/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/2012/04/19/Limit-bandwidth/</loc>
         <lastmod>2012-05-05T14:12:31-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/</loc>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/
+        </loc>
         <lastmod>2012-05-05T14:22:32-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/blog/archives/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/blog/archives/</loc>
         <lastmod>2012-05-05T15:35:55-04:00</lastmod>
     </url>
     <url>
-        <loc>http://rmrf.eu/</loc>
+        <loc>http://nequissimus.github.com/rmrf.eu/</loc>
         <lastmod>2012-05-05T15:35:55-04:00</lastmod>
     </url>
 </urlset>

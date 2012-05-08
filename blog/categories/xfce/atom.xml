@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: xfce | rm -rf /]]></title>
-  <link href="http://rmrf.eu/blog/categories/xfce/atom.xml" rel="self"/>
-  <link href="http://rmrf.eu/"/>
-  <updated>2012-05-07T19:52:01-04:00</updated>
-  <id>http://rmrf.eu/</id>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/xfce/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-07T20:12:30-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Transparent background for icons]]></title>
-    <link href="http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/"/>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/"/>
     <updated>2012-04-22T11:00:00-04:00</updated>
-    <id>http://rmrf.eu/blog/2012/04/22/Transparent-background-for-icons</id>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/04/22/Transparent-background-for-icons</id>
     <content type="html"><![CDATA[<p>Using xfce, most of the themes available customize the way your desktop icons look, but almost all of them add some kind of background to the icon label.
 If you like the background to be transparent, you need to create one file in your home folder.</p>
 
