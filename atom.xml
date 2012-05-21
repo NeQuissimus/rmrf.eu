@@ -4,7 +4,7 @@
   <title><![CDATA[rm -rf /]]></title>
   <link href="http://nequissimus.github.com/rmrf.eu/atom.xml" rel="self"/>
   <link href="http://nequissimus.github.com/rmrf.eu/"/>
-  <updated>2012-05-07T20:53:06-04:00</updated>
+  <updated>2012-05-21T14:44:37-04:00</updated>
   <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fix iOS/Picasa sync]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/05/21/Fix-iOS-Picasa-Sync/"/>
+    <updated>2012-05-21T11:00:00-04:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/05/21/Fix-iOS-Picasa-Sync</id>
+    <content type="html"><![CDATA[<p>When importing photos from an iOS device into Google Picasa, sometimes an error -9912 occurs, which cannot be fixed on the client side.
+This error is the result of a corrupted meta data file on the iOS device.
+The problem can easily be fixed, a single file needs to be deleted.</p>
+
+<!--more-->
+
+
+<p>Remove the file on the iOS device by connecting to it with a file browser or SSH.</p>
+
+<div><script src='https://gist.github.com/2763819.js?file='></script>
+<noscript><pre><code>rm /var/mobile/Media/iTunes_Control/iTunes/PhotosFolderPrefs</code></pre></noscript></div>
+
+
+<p>The file will automatically be recreated by iOS, when opening the Photos.app. Picasa should then synchronize perfectly.</p>
+
+<p>Thanks to <a href="http://www.hickendesign.com/site/2011/01/iphone-error-fixed-picasa-and-iphoto-ica-error-9912" title="Hicken Design">Hicken Design</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Transparent background for icons]]></title>
@@ -469,24 +493,6 @@ Luckily, he had openSSH installed on his phone&#8230;</p>
 <p>Here is how to do that easily by using the command line</p>
 
 <p><code>type C:folder*.txt  &gt;&gt; C:resultall.txt</code></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Delete a user via Terminal.app]]></title>
-    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app/"/>
-    <updated>2010-11-04T11:00:00-04:00</updated>
-    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app</id>
-    <content type="html"><![CDATA[<p>Ever had the problem that somehow you had managed to create a user under Mac OS X which would not show up in the Preferences menu. But then when you try to create a new user with just that name, the machine tells you that there already is such a user?
-Here is how to delete a user via Terminal.app</p>
-
-<p><strong>Attention: Please make sure you use this command carefully as it can easily screw up your system if you have any typos in it.</strong></p>
-
-<div><script src='https://gist.github.com/2604859.js?file='></script>
-<noscript><pre><code>sudo dscl . -delete /Users/username</code></pre></noscript></div>
-
-
-
 ]]></content>
   </entry>
   

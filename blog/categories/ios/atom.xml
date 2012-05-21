@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iOS | rm -rf /]]></title>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/ios/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-21T14:44:37-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
+  <author>
+    <name><![CDATA[Tim Steinbach]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fix iOS/Picasa sync]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/05/21/Fix-iOS-Picasa-Sync/"/>
+    <updated>2012-05-21T11:00:00-04:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/05/21/Fix-iOS-Picasa-Sync</id>
+    <content type="html"><![CDATA[<p>When importing photos from an iOS device into Google Picasa, sometimes an error -9912 occurs, which cannot be fixed on the client side.
+This error is the result of a corrupted meta data file on the iOS device.
+The problem can easily be fixed, a single file needs to be deleted.</p>
+
+<!--more-->
+
+
+<p>Remove the file on the iOS device by connecting to it with a file browser or SSH.</p>
+
+<p><div><script src='https://gist.github.com/2763819.js?file='></script>
+<noscript><pre><code>rm /var/mobile/Media/iTunes_Control/iTunes/PhotosFolderPrefs</code></pre></noscript></div>
+</p>
+
+<p>The file will automatically be recreated by iOS, when opening the Photos.app. Picasa should then synchronize perfectly.</p>
+
+<p>Thanks to <a href="http://www.hickendesign.com/site/2011/01/iphone-error-fixed-picasa-and-iphoto-ica-error-9912" title="Hicken Design">Hicken Design</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>SSH tunnel - Windows - rm -rf /</title>
+  <title>Fix iOS/Picasa sync - rm -rf /</title>
   <meta name="author" content="Tim Steinbach">
 
   
-  <meta name="description" content="After explaining the SSH tunnel for Mac, here is the Windows version. (from the Mac entry) Have you ever been stuck behind a corporate firewall? (Or &hellip;">
+  <meta name="description" content="When importing photos from an iOS device into Google Picasa, sometimes an error -9912 occurs, which cannot be fixed on the client side.
+This error is &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows">
+  <link rel="canonical" href="http://nequissimus.github.com/rmrf.eu/blog/2012/05/21/Fix-iOS-Picasa-Sync">
   <link href="http://nequissimus.github.com/rmrf.eu/favicon.png" rel="icon">
   <link href="http://nequissimus.github.com/rmrf.eu/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="http://nequissimus.github.com/rmrf.eu/javascripts/modernizr-2.0.js"></script>
@@ -79,7 +80,7 @@
   
   <header>
     
-      <h1 class="entry-title">SSH Tunnel - Windows</h1>
+      <h1 class="entry-title">Fix iOS/Picasa Sync</h1>
     
     
       <p class="meta">
@@ -95,7 +96,7 @@
   
 
 
-<time datetime="2010-10-04T11:00:00-04:00" pubdate data-updated="true">04.Oct 2010</time>
+<time datetime="2012-05-21T11:00:00-04:00" pubdate data-updated="true">21.May 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -104,24 +105,22 @@
   </header>
 
 
-<div class="entry-content"><p>After explaining the SSH tunnel for Mac, here is the Windows version.</p>
-
-<p>(from the Mac entry)</p>
-
-<blockquote><p>Have you ever been stuck behind a corporate firewall? (Or at school?)
-It is usually fairly easy to bypass those systems using an SSH tunnel. All you need to have is a server on the Internet that allows you to log in via SSH.</p></blockquote>
+<div class="entry-content"><p>When importing photos from an iOS device into Google Picasa, sometimes an error -9912 occurs, which cannot be fixed on the client side.
+This error is the result of a corrupted meta data file on the iOS device.
+The problem can easily be fixed, a single file needs to be deleted.</p>
 
 <!--more-->
 
 
-<p>Get a copy of PuTTY for Windows and open it.
-First, enter your server data such as IP address and port.
-Go to Connection – SSH – Tunnels and enter a port as “Source Port” (eg. 8888) and an asterisk (*) as destination.
-Then switch to Dynamic and hit “Add”.
-Then go back to your basic options and save your profile under any name.</p>
+<p>Remove the file on the iOS device by connecting to it with a file browser or SSH.</p>
 
-<p>As soon as you open the connection and keep it open with PuTTY you can change your browser’s proxy settings to localhost:8888 and surf the Internet through that SSH tunnel.
-Since all the browsers work differently under Windows, please use Google to find out how to change the proxy settings for your particular browser.</p>
+<div><script src='https://gist.github.com/2763819.js?file='></script>
+<noscript><pre><code>rm /var/mobile/Media/iTunes_Control/iTunes/PhotosFolderPrefs</code></pre></noscript></div>
+
+
+<p>The file will automatically be recreated by iOS, when opening the Photos.app. Picasa should then synchronize perfectly.</p>
+
+<p>Thanks to <a href="http://www.hickendesign.com/site/2011/01/iphone-error-fixed-picasa-and-iphoto-ica-error-9912" title="Hicken Design">Hicken Design</a>.</p>
 </div>
 
 
@@ -144,12 +143,12 @@ Since all the browsers work differently under Windows, please use Google to find
   
 
 
-<time datetime="2010-10-04T11:00:00-04:00" pubdate data-updated="true">04.Oct 2010</time>
+<time datetime="2012-05-21T11:00:00-04:00" pubdate data-updated="true">21.May 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/putty/'>PuTTY</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/ssh/'>SSH</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/windows/'>Windows</a>
+    <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/picasa/'>Picasa</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/ios/'>iOS</a>
   
 </span>
 
@@ -158,7 +157,7 @@ Since all the browsers work differently under Windows, please use Google to find
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/" data-via="Tim_Steinbach" data-counturl="http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nequissimus.github.com/rmrf.eu/blog/2012/05/21/Fix-iOS-Picasa-Sync/" data-via="Tim_Steinbach" data-counturl="http://nequissimus.github.com/rmrf.eu/blog/2012/05/21/Fix-iOS-Picasa-Sync/" >Tweet</a>
   
   
   
@@ -169,10 +168,8 @@ Since all the browsers work differently under Windows, please use Google to find
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/03/SSH-tunnel-Mac/" title="Previous Post: SSH tunnel - Mac">&laquo; SSH tunnel - Mac</a>
+        <a class="basic-alignment left" href="http://nequissimus.github.com/rmrf.eu/blog/2012/04/22/Transparent-background-for-icons/" title="Previous Post: Transparent background for icons">&laquo; Transparent background for icons</a>
       
-      
-        <a class="basic-alignment right" href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/05/PuTTY-Automatically-load-a-profile/" title="Next Post: PuTTY - Automatically load a profile">PuTTY - Automatically load a profile &raquo;</a>
       
     </p>
   </footer>
@@ -281,8 +278,8 @@ Since all the browsers work differently under Windows, please use Google to find
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/';
-        var disqus_url = 'http://nequissimus.github.com/rmrf.eu/blog/2010/10/04/SSH-tunnel-Windows/';
+        var disqus_identifier = 'http://nequissimus.github.com/rmrf.eu/blog/2012/05/21/Fix-iOS-Picasa-Sync/';
+        var disqus_url = 'http://nequissimus.github.com/rmrf.eu/blog/2012/05/21/Fix-iOS-Picasa-Sync/';
         var disqus_script = 'embed.js';
       
     (function () {
