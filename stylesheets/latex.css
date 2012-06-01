@@ -1,0 +1,26 @@
+/*
+  LaTeX logo style sheet.
+  Taken from http://nitens.org/taraborelli/texlogo
+*/
+
+.latex {
+  font-family: Times, "Times New Roman", serif;
+  letter-spacing: 1px;
+}
+
+.latex sup {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
+}
+
+.latex sub {
+  text-transform: uppercase;
+  vertical-align: 1ex; /* Had to change this from -0.5ex, the E was too far down */
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+  font-size: 1em;
+}

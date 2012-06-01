@@ -4,7 +4,7 @@
   <title><![CDATA[rm -rf /]]></title>
   <link href="http://nequissimus.github.com/rmrf.eu/atom.xml" rel="self"/>
   <link href="http://nequissimus.github.com/rmrf.eu/"/>
-  <updated>2012-05-24T14:50:46-04:00</updated>
+  <updated>2012-05-31T21:15:16-04:00</updated>
   <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Missing phvr8t]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/06/01/Missing-phvr8t/"/>
+    <updated>2012-06-01T11:00:00-04:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/06/01/Missing-phvr8t</id>
+    <content type="html"><![CDATA[<p>When using <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>, I have a few templates I use on a regular basis. After reinstalling TeX Live, I was missing all the packages I usually have. So when turning one of my files into a PDF, the compiler complained. One mysterious file was &#8220;phvr8t&#8221;, which I could not find using <em>tlmgr</em>.</p>
+
+<!--more-->
+
+
+
+
+<div><script src='https://gist.github.com/2847781.js?file='></script>
+<noscript><pre><code>sudo tlmgr install helvetic</code></pre></noscript></div>
+
+
+<p>This will install the helvetic package.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fix iOS/Picasa sync]]></title>
@@ -480,19 +500,6 @@ Luckily, he had openSSH installed on his phone&#8230;</p>
 <li>Now Cydia should work again</li>
 </ol>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Merging text files]]></title>
-    <link href="http://nequissimus.github.com/rmrf.eu/blog/2010/12/04/Merging-text-files/"/>
-    <updated>2010-12-04T11:00:00-05:00</updated>
-    <id>http://nequissimus.github.com/rmrf.eu/blog/2010/12/04/Merging-text-files</id>
-    <content type="html"><![CDATA[<p>Today we needed to merge multiple files into one long file.</p>
-
-<p>Here is how to do that easily by using the command line</p>
-
-<p><code>type C:folder*.txt  &gt;&gt; C:resultall.txt</code></p>
 ]]></content>
   </entry>
   

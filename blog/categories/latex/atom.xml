@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: LaTeX | rm -rf /]]></title>
+  <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/latex/atom.xml" rel="self"/>
+  <link href="http://nequissimus.github.com/rmrf.eu/"/>
+  <updated>2012-05-31T21:15:16-04:00</updated>
+  <id>http://nequissimus.github.com/rmrf.eu/</id>
+  <author>
+    <name><![CDATA[Tim Steinbach]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Missing phvr8t]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/06/01/Missing-phvr8t/"/>
+    <updated>2012-06-01T11:00:00-04:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/06/01/Missing-phvr8t</id>
+    <content type="html"><![CDATA[<p>When using <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>, I have a few templates I use on a regular basis. After reinstalling TeX Live, I was missing all the packages I usually have. So when turning one of my files into a PDF, the compiler complained. One mysterious file was "phvr8t", which I could not find using <em>tlmgr</em>.</p>
+
+<!--more-->
+
+
+<p><div><script src='https://gist.github.com/2847781.js?file='></script>
+<noscript><pre><code>sudo tlmgr install helvetic</code></pre></noscript></div>
+</p>
+
+<p>This will install the helvetic package.</p>
+]]></content>
+  </entry>
+  
+</feed>
