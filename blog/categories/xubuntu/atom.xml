@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Xubuntu | rm -rf /]]></title>
   <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/xubuntu/atom.xml" rel="self"/>
   <link href="http://nequissimus.github.com/rmrf.eu/"/>
-  <updated>2012-06-02T15:12:51-04:00</updated>
+  <updated>2012-06-16T16:01:16-04:00</updated>
   <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Run .bash_profile automatically]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/06/15/run-bash-profile-automatically/"/>
+    <updated>2012-06-15T11:00:00-04:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/06/15/run-bash-profile-automatically</id>
+    <content type="html"><![CDATA[<p>For most UNIX and UNIX-based operating systems, it is common behavior to execute the file <code>.bash_profile</code> when opening a new Terminal session.
+Unfortunately, this is not the case with Xubuntu (and probably other -buntus).
+A fix can be found below.</p>
+
+<!--more-->
+
+
+<p>Open Terminal and go to the Preferences menu under Edit. Under the General tab, you will find a checkbox named "Run command as login shell". Make sure, the box is checked.
+<code>.bash_profile</code> will then be run automatically every time you open a Terminal window.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Transparent background for icons]]></title>

@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Start VMware Fusion VM without GUI - rm -rf /</title>
+  <title>Run .bash_profile automatically - rm -rf /</title>
   <meta name="author" content="Tim Steinbach">
 
   
-  <meta name="description" content="If you have server operating systems in VMware Fusion and SSH into them, you do not need the VMware Fusion GUI. Here is how to start a VM “headless &hellip;">
+  <meta name="description" content="For most UNIX and UNIX-based operating systems, it is common behavior to execute the file .bash_profile when opening a new Terminal session. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI">
+  <link rel="canonical" href="http://nequissimus.github.com/rmrf.eu/blog/2012/06/15/run-bash-profile-automatically">
   <link href="http://nequissimus.github.com/rmrf.eu/favicon.png" rel="icon">
   <link href="http://nequissimus.github.com/rmrf.eu/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://nequissimus.github.com/rmrf.eu/stylesheets/latex.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -79,7 +79,7 @@
   
   <header>
     
-      <h1 class="entry-title">Start VMware Fusion VM Without GUI</h1>
+      <h1 class="entry-title">Run .bash_profile Automatically</h1>
     
     
       <p class="meta">
@@ -95,7 +95,7 @@
   
 
 
-<time datetime="2012-02-17T11:00:00-05:00" pubdate data-updated="true">17.Feb 2012</time>
+<time datetime="2012-06-15T11:00:00-04:00" pubdate data-updated="true">15.Jun 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -104,23 +104,15 @@
   </header>
 
 
-<div class="entry-content"><p>If you have server operating systems in VMware Fusion and SSH into them, you do not need the VMware Fusion GUI.</p>
-
-<p>Here is how to start a VM “headless” (without any GUI).</p>
+<div class="entry-content"><p>For most UNIX and UNIX-based operating systems, it is common behavior to execute the file <code>.bash_profile</code> when opening a new Terminal session.
+Unfortunately, this is not the case with Xubuntu (and probably other -buntus).
+A fix can be found below.</p>
 
 <!--more-->
 
 
-
-
-<div><script src='https://gist.github.com/2604377.js?file='></script>
-<noscript><pre><code>/Library/Application\ Support/VMware\ Fusion/vmrun -T fusion start /Volumes/VMs/_Hadoop/Hadoop\ Master.vmwarevm/Hadoop\ Master.vmx nogui</code></pre></noscript></div>
-
-
-<p>Swapping “start” with “stop” will shut the VM down.
-Customize the paths to match your Fusion and VM locations.</p>
-
-<p>Source <a href="http://drchriswilson.blogspot.com/2009/12/vmware-fusion-3-headless.html">@Dr Chris Wilson</a></p>
+<p>Open Terminal and go to the Preferences menu under Edit. Under the General tab, you will find a checkbox named &#8220;Run command as login shell&#8221;. Make sure, the box is checked.
+<code>.bash_profile</code> will then be run automatically every time you open a Terminal window.</p>
 </div>
 
 
@@ -143,12 +135,12 @@ Customize the paths to match your Fusion and VM locations.</p>
   
 
 
-<time datetime="2012-02-17T11:00:00-05:00" pubdate data-updated="true">17.Feb 2012</time>
+<time datetime="2012-06-15T11:00:00-04:00" pubdate data-updated="true">15.Jun 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/mac/'>Mac</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/vmware-fusion/'>VMware Fusion</a>
+    <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/linux/'>Linux</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/xubuntu/'>Xubuntu</a>
   
 </span>
 
@@ -157,7 +149,7 @@ Customize the paths to match your Fusion and VM locations.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/" data-via="Tim_Steinbach" data-counturl="http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nequissimus.github.com/rmrf.eu/blog/2012/06/15/run-bash-profile-automatically/" data-via="Tim_Steinbach" data-counturl="http://nequissimus.github.com/rmrf.eu/blog/2012/06/15/run-bash-profile-automatically/" >Tweet</a>
   
   
   
@@ -168,10 +160,8 @@ Customize the paths to match your Fusion and VM locations.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="http://nequissimus.github.com/rmrf.eu/blog/2012/02/16/Use-Apple-Gatekeeper-with-10.7.3/" title="Previous Post: Use Apple Gatekeeper with 10.7.3">&laquo; Use Apple Gatekeeper with 10.7.3</a>
+        <a class="basic-alignment left" href="http://nequissimus.github.com/rmrf.eu/blog/2012/06/02/fix-octopress-with-osx-and-ruby-1-dot-9-3/" title="Previous Post: Fix Octopress with OSX and Ruby 1.9.3">&laquo; Fix Octopress with OSX and Ruby 1.9.3</a>
       
-      
-        <a class="basic-alignment right" href="http://nequissimus.github.com/rmrf.eu/blog/2012/04/19/Limit-bandwidth/" title="Next Post: Limit bandwidth">Limit bandwidth &raquo;</a>
       
     </p>
   </footer>
@@ -280,8 +270,8 @@ Customize the paths to match your Fusion and VM locations.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/';
-        var disqus_url = 'http://nequissimus.github.com/rmrf.eu/blog/2012/02/17/Start-VMware-Fusion-VM-without-GUI/';
+        var disqus_identifier = 'http://nequissimus.github.com/rmrf.eu/blog/2012/06/15/run-bash-profile-automatically/';
+        var disqus_url = 'http://nequissimus.github.com/rmrf.eu/blog/2012/06/15/run-bash-profile-automatically/';
         var disqus_script = 'embed.js';
       
     (function () {
