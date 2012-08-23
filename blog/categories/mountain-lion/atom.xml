@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mountain Lion | rm -rf /]]></title>
   <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/mountain-lion/atom.xml" rel="self"/>
   <link href="http://nequissimus.github.com/rmrf.eu/"/>
-  <updated>2012-08-22T21:00:26-04:00</updated>
+  <updated>2012-08-23T16:03:01-04:00</updated>
   <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fix OSX dictation]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/08/23/fix-osx-dictation/"/>
+    <updated>2012-08-23T11:00:00-04:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/08/23/fix-osx-dictation</id>
+    <content type="html"><![CDATA[<p>If, like mine, your Dictation feature under OSX does nothing but wobble its icon, try the following solution.</p>
+
+<!--more-->
+
+
+<p><div><script src='https://gist.github.com/3440831.js?file='></script>
+<noscript><pre><code>1. rm ~/Library/Preferences/com.apple.assistant.plist*
+2. Reboot Mac
+3. Turn Dictation off in System Preferences
+4. Reboot Mac
+5. Turn Dictation on in System Preferences</code></pre></noscript></div>
+</p>
+
+<p>An odd solution with all the rebooting, but it worked for me!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Remove context menu duplicates]]></title>

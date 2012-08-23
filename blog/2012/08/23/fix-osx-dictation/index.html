@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: RDP - rm -rf /</title>
+  <title>Fix OSX dictation - rm -rf /</title>
   <meta name="author" content="Tim Steinbach">
 
   
-  <meta name="description" content="Category: RDP">
+  <meta name="description" content="If, like mine, your Dictation feature under OSX does nothing but wobble its icon, try the following solution. 1. rm ~/Library/Preferences/com.apple. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nequissimus.github.com/rmrf.eublog/categories/rdp">
+  <link rel="canonical" href="http://nequissimus.github.com/rmrf.eu/blog/2012/08/23/fix-osx-dictation">
   <link href="http://nequissimus.github.com/rmrf.eu/favicon.png" rel="icon">
   <link href="http://nequissimus.github.com/rmrf.eu/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://nequissimus.github.com/rmrf.eu/stylesheets/latex.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -75,36 +75,110 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: RDP</h1>
+    
+      <h1 class="entry-title">Fix OSX Dictation</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-23T11:00:00-04:00" pubdate data-updated="true">23.Aug 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
+
+
+<div class="entry-content"><p>If, like mine, your Dictation feature under OSX does nothing but wobble its icon, try the following solution.</p>
+
+<!--more-->
 
 
 
-  
-  <h2>2011</h2>
 
-<article>
-  
-<h1><a href="http://nequissimus.github.com/rmrf.eu/blog/2011/03/11/RDP-force-login/">RDP force login</a></h1>
-<time datetime="2011-03-11T11:00:00-05:00" pubdate><span class='month'>Mar</span> <span class='day'>11</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/rdp/'>RDP</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/windows/'>Windows</a></span>
-</footer>
+<div><script src='https://gist.github.com/3440831.js?file='></script>
+<noscript><pre><code>1. rm ~/Library/Preferences/com.apple.assistant.plist*
+2. Reboot Mac
+3. Turn Dictation off in System Preferences
+4. Reboot Mac
+5. Turn Dictation on in System Preferences</code></pre></noscript></div>
 
 
-</article>
-
+<p>An odd solution with all the rebooting, but it worked for me!</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Tim Steinbach</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-23T11:00:00-04:00" pubdate data-updated="true">23.Aug 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/mountain-lion/'>Mountain Lion</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/osx/'>OSX</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nequissimus.github.com/rmrf.eu/blog/2012/08/23/fix-osx-dictation/" data-via="Tim_Steinbach" data-counturl="http://nequissimus.github.com/rmrf.eu/blog/2012/08/23/fix-osx-dictation/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="http://nequissimus.github.com/rmrf.eu/blog/2012/08/22/remove-context-duplicates/" title="Previous Post: Remove context menu duplicates">&laquo; Remove context menu duplicates</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -202,7 +276,10 @@
       var disqus_shortname = 'rmrfeu';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nequissimus.github.com/rmrf.eu/blog/2012/08/23/fix-osx-dictation/';
+        var disqus_url = 'http://nequissimus.github.com/rmrf.eu/blog/2012/08/23/fix-osx-dictation/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -4,7 +4,7 @@
   <title><![CDATA[rm -rf /]]></title>
   <link href="http://nequissimus.github.com/rmrf.eu/atom.xml" rel="self"/>
   <link href="http://nequissimus.github.com/rmrf.eu/"/>
-  <updated>2012-08-22T21:00:26-04:00</updated>
+  <updated>2012-08-23T16:03:01-04:00</updated>
   <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fix OSX dictation]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/08/23/fix-osx-dictation/"/>
+    <updated>2012-08-23T11:00:00-04:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/08/23/fix-osx-dictation</id>
+    <content type="html"><![CDATA[<p>If, like mine, your Dictation feature under OSX does nothing but wobble its icon, try the following solution.</p>
+
+<!--more-->
+
+
+
+
+<div><script src='https://gist.github.com/3440831.js?file='></script>
+<noscript><pre><code>1. rm ~/Library/Preferences/com.apple.assistant.plist*
+2. Reboot Mac
+3. Turn Dictation off in System Preferences
+4. Reboot Mac
+5. Turn Dictation on in System Preferences</code></pre></noscript></div>
+
+
+<p>An odd solution with all the rebooting, but it worked for me!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Remove context menu duplicates]]></title>
@@ -551,28 +575,6 @@ killall Dock</code></pre></noscript></div>
 
 
 <p>Thanks to <a href="http://twitter.com/Cocoia/status/36078449634316288">@Cocoia</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Remove Spotlight icon from the menubar]]></title>
-    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar/"/>
-    <updated>2011-01-12T11:00:00-05:00</updated>
-    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/01/12/Remove-Spotlight-icon-from-the-menubar</id>
-    <content type="html"><![CDATA[<p>In combination with the command that deactivates Spotlight indexing, it is useful to hide the app’s icon from the menu bar as well. Here is how you achieve this.</p>
-
-<!--more-->
-
-
-<p>Do not allow any user but root to use the Search engine:</p>
-
-<div><script src='https://gist.github.com/2604946.js?file='></script>
-<noscript><pre><code>sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-
-killall SystemUIServer</code></pre></noscript></div>
-
-
-<p>In order to get the icon back, replace 600 with 755 in the first command.</p>
 ]]></content>
   </entry>
   
