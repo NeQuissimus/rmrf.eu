@@ -192,7 +192,7 @@
         <loc>
             http://nequissimus.github.com/rmrf.eu/blog/2012/06/02/fix-octopress-with-osx-and-ruby-1-dot-9-3/
         </loc>
-        <lastmod>2012-06-02T15:12:26-04:00</lastmod>
+        <lastmod>2012-06-02T15:12:23-04:00</lastmod>
     </url>
     <url>
         <loc>
@@ -201,11 +201,17 @@
         <lastmod>2012-06-16T15:02:59-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://nequissimus.github.com/rmrf.eu/blog/2012/08/22/remove-context-duplicates/
+        </loc>
+        <lastmod>2012-08-22T20:28:14-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://nequissimus.github.com/rmrf.eu/blog/archives/</loc>
-        <lastmod>2012-06-16T15:02:59-04:00</lastmod>
+        <lastmod>2012-08-22T20:28:14-04:00</lastmod>
     </url>
     <url>
         <loc>http://nequissimus.github.com/rmrf.eu/</loc>
-        <lastmod>2012-06-16T15:02:59-04:00</lastmod>
+        <lastmod>2012-08-22T20:28:14-04:00</lastmod>
     </url>
 </urlset>

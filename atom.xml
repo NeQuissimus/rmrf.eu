@@ -4,7 +4,7 @@
   <title><![CDATA[rm -rf /]]></title>
   <link href="http://nequissimus.github.com/rmrf.eu/atom.xml" rel="self"/>
   <link href="http://nequissimus.github.com/rmrf.eu/"/>
-  <updated>2012-06-16T16:01:16-04:00</updated>
+  <updated>2012-08-22T21:00:26-04:00</updated>
   <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Remove context menu duplicates]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/08/22/remove-context-duplicates/"/>
+    <updated>2012-08-22T11:00:00-04:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/08/22/remove-context-duplicates</id>
+    <content type="html"><![CDATA[<p>Sometimes there is a strange effect (bug?) in OSX, which causes applications to show up multiple times in the &#8220;Open With&#8221; context menu. A simple Terminal command can fix this problem.</p>
+
+<!--more-->
+
+
+
+
+<div><script src='https://gist.github.com/3430814.js?file='></script>
+<noscript><pre><code>/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user</code></pre></noscript></div>
+
+
+<p>Thanks to <a href="http://cloudlog.de/os-x-doppelte-app-eintraege-unter-oeffnen-mit-entfernen/">Cloudlog</a> (German)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Run .bash_profile automatically]]></title>
@@ -553,29 +573,6 @@ killall SystemUIServer</code></pre></noscript></div>
 
 
 <p>In order to get the icon back, replace 600 with 755 in the first command.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Disable Spotlight indexing]]></title>
-    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing/"/>
-    <updated>2011-01-11T11:00:00-05:00</updated>
-    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/01/11/Disable-Spotlight-indexing</id>
-    <content type="html"><![CDATA[<p>If you have no use for Spotlight or are using an alternative product, here is how to disable indexing under Snow Leopard.</p>
-
-<p>Turn indexing off:</p>
-
-<div><script src='https://gist.github.com/2604905.js?file=disable'></script>
-<noscript><pre><code>sudo mdutil -a -i off</code></pre></noscript></div>
-
-
-<p>Turn indexing back on:</p>
-
-<div><script src='https://gist.github.com/2604905.js?file=enable'></script>
-<noscript><pre><code>sudo mdutil -a -i on</code></pre></noscript></div>
-
-
-
 ]]></content>
   </entry>
   

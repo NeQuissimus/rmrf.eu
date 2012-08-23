@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Find UUID of a hard disk - rm -rf /</title>
+  <title>Remove context menu duplicates - rm -rf /</title>
   <meta name="author" content="Tim Steinbach">
 
   
-  <meta name="description" content="The other day I added a new hard drive to my server. In order to make it available after each reboot (my home server shuts down over night) I needed &hellip;">
+  <meta name="description" content="Sometimes there is a strange effect (bug?) in OSX, which causes applications to show up multiple times in the &#8220;Open With&#8221; context menu. A &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk">
+  <link rel="canonical" href="http://nequissimus.github.com/rmrf.eu/blog/2012/08/22/remove-context-duplicates">
   <link href="http://nequissimus.github.com/rmrf.eu/favicon.png" rel="icon">
   <link href="http://nequissimus.github.com/rmrf.eu/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://nequissimus.github.com/rmrf.eu/stylesheets/latex.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -79,7 +79,7 @@
   
   <header>
     
-      <h1 class="entry-title">Find UUID of a Hard Disk</h1>
+      <h1 class="entry-title">Remove Context Menu Duplicates</h1>
     
     
       <p class="meta">
@@ -95,7 +95,7 @@
   
 
 
-<time datetime="2010-10-24T11:00:00-04:00" pubdate data-updated="true">24.Oct 2010</time>
+<time datetime="2012-08-22T11:00:00-04:00" pubdate data-updated="true">22.Aug 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -104,13 +104,18 @@
   </header>
 
 
-<div class="entry-content"><p>The other day I added a new hard drive to my server. In order to make it available after each reboot (my home server shuts down over night) I needed to add it to my <code>/etc/fstab</code>.
-Since it is smarter to use UUIDs instead of the <code>/dev/sdX1</code> name, I tried to find my drive’s UUID.
-After a few searches in various manuals, here is how to easily find your UUID.</p>
+<div class="entry-content"><p>Sometimes there is a strange effect (bug?) in OSX, which causes applications to show up multiple times in the &#8220;Open With&#8221; context menu. A simple Terminal command can fix this problem.</p>
 
-<p>This will display all the drive’s UUIDs and also of which type they are (e.g. ext3)</p>
+<!--more-->
 
-<p><code>blkid</code></p>
+
+
+
+<div><script src='https://gist.github.com/3430814.js?file='></script>
+<noscript><pre><code>/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain system -domain user</code></pre></noscript></div>
+
+
+<p>Thanks to <a href="http://cloudlog.de/os-x-doppelte-app-eintraege-unter-oeffnen-mit-entfernen/">Cloudlog</a> (German)</p>
 </div>
 
 
@@ -133,12 +138,12 @@ After a few searches in various manuals, here is how to easily find your UUID.</
   
 
 
-<time datetime="2010-10-24T11:00:00-04:00" pubdate data-updated="true">24.Oct 2010</time>
+<time datetime="2012-08-22T11:00:00-04:00" pubdate data-updated="true">22.Aug 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/linux/'>Linux</a>
+    <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/mountain-lion/'>Mountain Lion</a>, <a class='category' href='http://nequissimus.github.com/rmrf.eu/blog/categories/osx/'>OSX</a>
   
 </span>
 
@@ -147,7 +152,7 @@ After a few searches in various manuals, here is how to easily find your UUID.</
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nequissimus.github.com/rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk/" data-via="Tim_Steinbach" data-counturl="http://nequissimus.github.com/rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nequissimus.github.com/rmrf.eu/blog/2012/08/22/remove-context-duplicates/" data-via="Tim_Steinbach" data-counturl="http://nequissimus.github.com/rmrf.eu/blog/2012/08/22/remove-context-duplicates/" >Tweet</a>
   
   
   
@@ -158,10 +163,8 @@ After a few searches in various manuals, here is how to easily find your UUID.</
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="http://nequissimus.github.com/rmrf.eu/blog/2010/10/06/Rebuild-Spotlight-index/" title="Previous Post: Rebuild Spotlight index">&laquo; Rebuild Spotlight index</a>
+        <a class="basic-alignment left" href="http://nequissimus.github.com/rmrf.eu/blog/2012/06/15/run-bash-profile-automatically/" title="Previous Post: Run .bash_profile automatically">&laquo; Run .bash_profile automatically</a>
       
-      
-        <a class="basic-alignment right" href="http://nequissimus.github.com/rmrf.eu/blog/2010/11/04/Delete-a-user-via-Terminal.app/" title="Next Post: Delete a user via Terminal.app">Delete a user via Terminal.app &raquo;</a>
       
     </p>
   </footer>
@@ -270,8 +273,8 @@ After a few searches in various manuals, here is how to easily find your UUID.</
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://nequissimus.github.com/rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk/';
-        var disqus_url = 'http://nequissimus.github.com/rmrf.eu/blog/2010/10/24/Find-UUID-of-a-hard-disk/';
+        var disqus_identifier = 'http://nequissimus.github.com/rmrf.eu/blog/2012/08/22/remove-context-duplicates/';
+        var disqus_url = 'http://nequissimus.github.com/rmrf.eu/blog/2012/08/22/remove-context-duplicates/';
         var disqus_script = 'embed.js';
       
     (function () {
