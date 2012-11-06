@@ -4,7 +4,7 @@
   <title><![CDATA[rm -rf /]]></title>
   <link href="http://nequissimus.github.com/rmrf.eu/atom.xml" rel="self"/>
   <link href="http://nequissimus.github.com/rmrf.eu/"/>
-  <updated>2012-08-23T16:03:01-04:00</updated>
+  <updated>2012-11-06T18:07:55-05:00</updated>
   <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Get keyboard layout via Terminal.app]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2012/09/20/keyboard-layout-terminal/"/>
+    <updated>2012-09-20T11:00:00-04:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2012/09/20/keyboard-layout-terminal</id>
+    <content type="html"><![CDATA[<p>I just had to find out my current keyboard layout using the command line. Turns out, Apple stores it in a plist file.</p>
+
+<!--more-->
+
+
+
+
+<div><script src='https://gist.github.com/3924246.js?file='></script>
+<noscript><pre><code>$ defaults read ~/Library/Preferences/ByHost/com.apple.HIToolbox.*.plist AppleCurrentKeyboardLayoutInputSourceID</code></pre></noscript></div>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fix OSX dictation]]></title>
@@ -558,23 +578,6 @@ In order to make sure of that, here is a quick way to keep iTunes from updating 
 
 
 <p>Thanks to <a href="http://pastebin.com/pXWYQRP9">an anonymous poster</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Add blank dock icons as spacers]]></title>
-    <link href="http://nequissimus.github.com/rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers/"/>
-    <updated>2011-02-12T11:00:00-05:00</updated>
-    <id>http://nequissimus.github.com/rmrf.eu/blog/2011/02/12/Add-blank-dock-icons-as-spacers</id>
-    <content type="html"><![CDATA[<p>Personally, I have a very strict order of icons in my OSX dock. But I am okay with all of them being next to each other.
-If you would like like to add a visual separation between certain “groups” of icons, here is how to add spacers.</p>
-
-<div><script src='https://gist.github.com/2604964.js?file='></script>
-<noscript><pre><code>defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type=&quot;spacer-tile&quot;;}'
-killall Dock</code></pre></noscript></div>
-
-
-<p>Thanks to <a href="http://twitter.com/Cocoia/status/36078449634316288">@Cocoia</a></p>
 ]]></content>
   </entry>
   
