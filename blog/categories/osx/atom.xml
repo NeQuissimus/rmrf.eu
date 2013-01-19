@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OSX | rm -rf /]]></title>
   <link href="http://nequissimus.github.com/rmrf.eu/blog/categories/osx/atom.xml" rel="self"/>
   <link href="http://nequissimus.github.com/rmrf.eu/"/>
-  <updated>2012-11-06T18:07:55-05:00</updated>
+  <updated>2013-01-19T15:28:55-05:00</updated>
   <id>http://nequissimus.github.com/rmrf.eu/</id>
   <author>
     <name><![CDATA[Tim Steinbach]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[See and clean Mac downloads]]></title>
+    <link href="http://nequissimus.github.com/rmrf.eu/blog/2013/01/19/see-and-clean-mac-downloads/"/>
+    <updated>2013-01-19T11:00:00-05:00</updated>
+    <id>http://nequissimus.github.com/rmrf.eu/blog/2013/01/19/see-and-clean-mac-downloads</id>
+    <content type="html"><![CDATA[<p>OSX keeps a record of all the files ever downloaded with your user account. Here is how to see the list of files downloaded as well as a way of deleting them.</p>
+
+<!--more-->
+
+
+<p>List all files:</p>
+
+<p><div><script src='https://gist.github.com/4574816.js?file=list_files.sh'></script>
+<noscript><pre><code>sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEvents* 'select LSQuarantineDataURLString from LSQuarantineEvent'</code></pre></noscript></div>
+</p>
+
+<p>Empty the list:</p>
+
+<p><div><script src='https://gist.github.com/4574816.js?file=delete_list.sh'></script>
+<noscript><pre><code>sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEvents* 'delete from LSQuarantineEvent'</code></pre></noscript></div>
+</p>
+
+<p>Source: <a href="http://www.macgasm.net/2013/01/18/good-morning-your-mac-keeps-a-log-of-all-your-downloads/">macgasm</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Get keyboard layout via Terminal.app]]></title>
