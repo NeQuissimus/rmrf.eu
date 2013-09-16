@@ -39,6 +39,50 @@
         </div>
 
         <h1>
+<a name="copy-files-with-progress" class="anchor" href="#copy-files-with-progress"><span class="octicon octicon-link"></span></a>Copy files with progress</h1>
+
+<h5>
+<a name="sep-16-2013" class="anchor" href="#sep-16-2013"><span class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
+
+<h6>
+<a name="osx-linux" class="anchor" href="#osx-linux"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
+
+<div class="highlight highlight-bash"><pre><span class="nb">alias </span><span class="nv">ls</span><span class="o">=</span><span class="s1">'rsync --progress'</span>
+</pre></div>
+
+<hr><h1>
+<a name="remove-key-from-known_hosts" class="anchor" href="#remove-key-from-known_hosts"><span class="octicon octicon-link"></span></a>Remove key from known_hosts</h1>
+
+<h5>
+<a name="sep-16-2013-1" class="anchor" href="#sep-16-2013-1"><span class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
+
+<h6>
+<a name="osx-linux-1" class="anchor" href="#osx-linux-1"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
+
+<div class="highlight highlight-bash"><pre>ssh-keygen -R HOST
+</pre></div>
+
+<hr><h1>
+<a name="mysql-log" class="anchor" href="#mysql-log"><span class="octicon octicon-link"></span></a>MySQL log</h1>
+
+<h5>
+<a name="sep-16-2013-2" class="anchor" href="#sep-16-2013-2"><span class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
+
+<h6>
+<a name="mysql" class="anchor" href="#mysql"><span class="octicon octicon-link"></span></a>MySQL</h6>
+
+<p><em>my.cnf.51</em></p>
+
+<pre><code>log=/var/log/mysql/mysql.log
+</code></pre>
+
+<p><em>my.cnf.56</em></p>
+
+<pre><code>general_log=true
+general_log_file=/var/log/mysql/mysql.log
+</code></pre>
+
+<hr><h1>
 <a name="prevent-spotlight-indexing" class="anchor" href="#prevent-spotlight-indexing"><span class="octicon octicon-link"></span></a>Prevent Spotlight indexing</h1>
 
 <h5>
