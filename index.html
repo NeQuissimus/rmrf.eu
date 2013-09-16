@@ -41,11 +41,23 @@
         <h1>
 <a name="prevent-spotlight-indexing" class="anchor" href="#prevent-spotlight-indexing"><span class="octicon octicon-link"></span></a>Prevent Spotlight indexing</h1>
 
+<h5>
+<a name="mar-29-2013" class="anchor" href="#mar-29-2013"><span class="octicon octicon-link"></span></a>(Mar 29, 2013)</h5>
+
+<h6>
+<a name="osx" class="anchor" href="#osx"><span class="octicon octicon-link"></span></a>OSX</h6>
+
 <div class="highlight highlight-bash"><pre>touch /Volumes/MyDrive/.metadata_never_index
 </pre></div>
 
 <hr><h1>
 <a name="listclear-downloaded-files-list-in-osx" class="anchor" href="#listclear-downloaded-files-list-in-osx"><span class="octicon octicon-link"></span></a>List/Clear downloaded files list in OSX</h1>
+
+<h5>
+<a name="jan-19-2013" class="anchor" href="#jan-19-2013"><span class="octicon octicon-link"></span></a>(Jan 19, 2013)</h5>
+
+<h6>
+<a name="osx-1" class="anchor" href="#osx-1"><span class="octicon octicon-link"></span></a>OSX</h6>
 
 <p><em>List</em></p>
 
@@ -56,6 +68,113 @@
 
 <div class="highlight highlight-bash"><pre>sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEvents* <span class="s1">'delete from LSQuarantineEvent'</span>
 </pre></div>
+
+<hr><h1>
+<a name="rebuild-context-menu-entries" class="anchor" href="#rebuild-context-menu-entries"><span class="octicon octicon-link"></span></a>Rebuild context menu entries</h1>
+
+<h5>
+<a name="aug-22-2012" class="anchor" href="#aug-22-2012"><span class="octicon octicon-link"></span></a>(Aug 22, 2012)</h5>
+
+<h6>
+<a name="osx-2" class="anchor" href="#osx-2"><span class="octicon octicon-link"></span></a>OSX</h6>
+
+<div class="highlight highlight-bash"><pre>/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain <span class="nb">local</span> -domain system -domain user
+</pre></div>
+
+<hr><h1>
+<a name="limit-bandwidth" class="anchor" href="#limit-bandwidth"><span class="octicon octicon-link"></span></a>Limit bandwidth</h1>
+
+<h5>
+<a name="apr-19-2012" class="anchor" href="#apr-19-2012"><span class="octicon octicon-link"></span></a>(Apr 19, 2012)</h5>
+
+<h6>
+<a name="osx-3" class="anchor" href="#osx-3"><span class="octicon octicon-link"></span></a>OSX</h6>
+
+<p><em>Add</em></p>
+
+<div class="highlight highlight-bash"><pre>ipfw pipe 1 config bw 100KB
+ipfw add 1 pipe 1 src-port any
+</pre></div>
+
+<p><em>Remove</em></p>
+
+<div class="highlight highlight-bash"><pre>ipfw delete 00001
+</pre></div>
+
+<hr><h1>
+<a name="headless-vmware-fusion" class="anchor" href="#headless-vmware-fusion"><span class="octicon octicon-link"></span></a>Headless VMware Fusion</h1>
+
+<h5>
+<a name="feb-17-2012" class="anchor" href="#feb-17-2012"><span class="octicon octicon-link"></span></a>(Feb 17, 2012)</h5>
+
+<h6>
+<a name="osx-vmware-fusion" class="anchor" href="#osx-vmware-fusion"><span class="octicon octicon-link"></span></a>OSX, VMware Fusion</h6>
+
+<div class="highlight highlight-bash"><pre>/Library/Application<span class="se">\ </span>Support/VMware<span class="se">\ </span>Fusion/vmrun -T fusion start /Volumes/VMs/_Hadoop/Hadoop<span class="se">\ </span>Master.vmwarevm/Hadoop<span class="se">\ </span>Master.vmx nogui
+</pre></div>
+
+<hr><h1>
+<a name="hideshow-library" class="anchor" href="#hideshow-library"><span class="octicon octicon-link"></span></a>Hide/Show ~/Library</h1>
+
+<h5>
+<a name="jul-21-2011" class="anchor" href="#jul-21-2011"><span class="octicon octicon-link"></span></a>(Jul 21, 2011)</h5>
+
+<h6>
+<a name="osx-4" class="anchor" href="#osx-4"><span class="octicon octicon-link"></span></a>OSX</h6>
+
+<div class="highlight highlight-bash"><pre>chflags <span class="o">[</span>nohidden|hidden<span class="o">]</span> ~/Library
+</pre></div>
+
+<hr><h1>
+<a name="force-login-via-rdp" class="anchor" href="#force-login-via-rdp"><span class="octicon octicon-link"></span></a>Force login via RDP</h1>
+
+<h5>
+<a name="mar-11-2011" class="anchor" href="#mar-11-2011"><span class="octicon octicon-link"></span></a>(Mar 11, 2011)</h5>
+
+<h6>
+<a name="windows" class="anchor" href="#windows"><span class="octicon octicon-link"></span></a>Windows</h6>
+
+<pre><code>mstsc /v:123.123.123.123 /admin
+</code></pre>
+
+<hr><h1>
+<a name="blank-dockapp-icon" class="anchor" href="#blank-dockapp-icon"><span class="octicon octicon-link"></span></a>Blank Dock.app icon</h1>
+
+<h5>
+<a name="feb-12-2011" class="anchor" href="#feb-12-2011"><span class="octicon octicon-link"></span></a>(Feb 12, 2011)</h5>
+
+<h6>
+<a name="osx-5" class="anchor" href="#osx-5"><span class="octicon octicon-link"></span></a>OSX</h6>
+
+<div class="highlight highlight-bash"><pre>defaults write com.apple.dock persistent-apps -array-add <span class="s1">'{tile-data={}; tile-type="spacer-tile";}'</span>
+killall Dock
+</pre></div>
+
+<hr><h1>
+<a name="rebuild-spotlight-index" class="anchor" href="#rebuild-spotlight-index"><span class="octicon octicon-link"></span></a>Rebuild Spotlight index</h1>
+
+<h5>
+<a name="oct-6-2010" class="anchor" href="#oct-6-2010"><span class="octicon octicon-link"></span></a>(Oct 6, 2010)</h5>
+
+<h6>
+<a name="osx-6" class="anchor" href="#osx-6"><span class="octicon octicon-link"></span></a>OSX</h6>
+
+<div class="highlight highlight-bash"><pre>sudo mdutil -E /
+</pre></div>
+
+<hr><h1>
+<a name="trigger-osx-maintenance-scripts" class="anchor" href="#trigger-osx-maintenance-scripts"><span class="octicon octicon-link"></span></a>Trigger OSX maintenance scripts</h1>
+
+<h5>
+<a name="sep-21-2010" class="anchor" href="#sep-21-2010"><span class="octicon octicon-link"></span></a>(Sep 21, 2010)</h5>
+
+<h6>
+<a name="osx-7" class="anchor" href="#osx-7"><span class="octicon octicon-link"></span></a>OSX</h6>
+
+<div class="highlight highlight-bash"><pre>sudo periodic daily weekly monthly
+</pre></div>
+
+<hr>
       </section>
 
     </div>
