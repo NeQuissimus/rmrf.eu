@@ -39,10 +39,37 @@
         </div>
 
         <h1>
-<a name="change-net-framework-in-powershell" class="anchor" href="#change-net-framework-in-powershell"><span class="octicon octicon-link"></span></a>Change .NET framework in Powershell</h1>
+<a name="sendreceive-snmp-traps" class="anchor" href="#sendreceive-snmp-traps"><span class="octicon octicon-link"></span></a>Send/Receive SNMP traps</h1>
 
 <h5>
 <a name="sep-17-2013" class="anchor" href="#sep-17-2013"><span class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
+
+<h6>
+<a name="osx-linux" class="anchor" href="#osx-linux"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
+
+<p><em>~/.snmp/snmptrapd.conf</em></p>
+
+<div class="highlight highlight-bash"><pre>disableAuthorization yes
+com2sec <span class="nb">local     </span>127.0.0.1/32    public
+com2sec <span class="nb">local     </span>10.30.68.0/24   public
+view all    included  .1
+</pre></div>
+
+<p><em>Start receiver</em></p>
+
+<div class="highlight highlight-bash"><pre>sudo snmptrapd -Lf ~/.snmp/output.txt
+</pre></div>
+
+<p><em>Send sample trap</em></p>
+
+<div class="highlight highlight-bash"><pre>sudo snmptrap -v 2c -c public -m ALL localhost <span class="s2">""</span> SNMPv2-MIB::sysLocation.0 s s <span class="s2">"Hello World"</span>
+</pre></div>
+
+<hr><h1>
+<a name="change-net-framework-in-powershell" class="anchor" href="#change-net-framework-in-powershell"><span class="octicon octicon-link"></span></a>Change .NET framework in Powershell</h1>
+
+<h5>
+<a name="sep-17-2013-1" class="anchor" href="#sep-17-2013-1"><span class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
 
 <h6>
 <a name="windows" class="anchor" href="#windows"><span class="octicon octicon-link"></span></a>Windows</h6>
@@ -62,7 +89,7 @@
 <a name="path-to-net-framework" class="anchor" href="#path-to-net-framework"><span class="octicon octicon-link"></span></a>Path to .NET Framework</h1>
 
 <h5>
-<a name="sep-17-2013-1" class="anchor" href="#sep-17-2013-1"><span class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
+<a name="sep-17-2013-2" class="anchor" href="#sep-17-2013-2"><span class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
 
 <h6>
 <a name="windows-1" class="anchor" href="#windows-1"><span class="octicon octicon-link"></span></a>Windows</h6>
@@ -79,7 +106,7 @@
 <a name="sep-16-2013" class="anchor" href="#sep-16-2013"><span class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
 
 <h6>
-<a name="osx-linux" class="anchor" href="#osx-linux"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
+<a name="osx-linux-1" class="anchor" href="#osx-linux-1"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
 
 <div class="highlight highlight-bash"><pre><span class="nb">alias </span><span class="nv">ls</span><span class="o">=</span><span class="s1">'rsync --progress'</span>
 </pre></div>
@@ -91,7 +118,7 @@
 <a name="sep-16-2013-1" class="anchor" href="#sep-16-2013-1"><span class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
 
 <h6>
-<a name="osx-linux-1" class="anchor" href="#osx-linux-1"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
+<a name="osx-linux-2" class="anchor" href="#osx-linux-2"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
 
 <div class="highlight highlight-bash"><pre>ssh-keygen -R HOST
 </pre></div>
