@@ -39,6 +39,40 @@
         </div>
 
         <h1>
+<a name="change-net-framework-in-powershell" class="anchor" href="#change-net-framework-in-powershell"><span class="octicon octicon-link"></span></a>Change .NET framework in Powershell</h1>
+
+<h5>
+<a name="sep-17-2013" class="anchor" href="#sep-17-2013"><span class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
+
+<h6>
+<a name="windows" class="anchor" href="#windows"><span class="octicon octicon-link"></span></a>Windows</h6>
+
+<div class="highlight highlight-xml"><pre><span class="c">&lt;!-- The following should be saved in C:\Windows\System32\WindowsPowershell\v1.0\ (or the correct path to Windows Powershell)</span>
+<span class="c"> as a file named "powershell.exe.config" --&gt;</span>
+<span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;configuration&gt;</span>
+    <span class="nt">&lt;startup</span> <span class="na">useLegacyV2RuntimeActivationPolicy=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;supportedRuntime</span> <span class="na">version=</span><span class="s">"v4.0.30319"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;supportedRuntime</span> <span class="na">version=</span><span class="s">"v2.0.50727"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/startup&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</pre></div>
+
+<hr><h1>
+<a name="path-to-net-framework" class="anchor" href="#path-to-net-framework"><span class="octicon octicon-link"></span></a>Path to .NET Framework</h1>
+
+<h5>
+<a name="sep-17-2013-1" class="anchor" href="#sep-17-2013-1"><span class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
+
+<h6>
+<a name="windows-1" class="anchor" href="#windows-1"><span class="octicon octicon-link"></span></a>Windows</h6>
+
+<div class="highlight highlight-powershell"><pre><span class="k">function</span> <span class="nb">Get-FrameworkDirectory</span> <span class="p">{</span>
+  <span class="p">$(</span><span class="no">[System.Runtime.InteropServices.RuntimeEnvironment]</span><span class="err">::</span><span class="n">GetRuntimeDirectory</span><span class="p">())</span>
+<span class="p">}</span>
+</pre></div>
+
+<hr><h1>
 <a name="copy-files-with-progress" class="anchor" href="#copy-files-with-progress"><span class="octicon octicon-link"></span></a>Copy files with progress</h1>
 
 <h5>
@@ -176,7 +210,7 @@ ipfw add 1 pipe 1 src-port any
 <a name="mar-11-2011" class="anchor" href="#mar-11-2011"><span class="octicon octicon-link"></span></a>(Mar 11, 2011)</h5>
 
 <h6>
-<a name="windows" class="anchor" href="#windows"><span class="octicon octicon-link"></span></a>Windows</h6>
+<a name="windows-2" class="anchor" href="#windows-2"><span class="octicon octicon-link"></span></a>Windows</h6>
 
 <pre><code>mstsc /v:123.123.123.123 /admin
 </code></pre>
