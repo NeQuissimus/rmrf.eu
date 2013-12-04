@@ -95,7 +95,7 @@ view all     included  .1
 <a name="windows-1" class="anchor" href="#windows-1"><span class="octicon octicon-link"></span></a>Windows</h6>
 
 <div class="highlight highlight-powershell"><pre><span class="k">function</span> <span class="nb">Get-FrameworkDirectory</span> <span class="p">{</span>
-  <span class="p">$(</span><span class="no">[System.Runtime.InteropServices.RuntimeEnvironment]</span><span class="err">::</span><span class="n">GetRuntimeDirectory</span><span class="p">())</span>
+  <span class="p">$(</span><span class="no">[System.Runtime.InteropServices.RuntimeEnvironment]</span><span class="p">::</span><span class="n">GetRuntimeDirectory</span><span class="p">())</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -227,7 +227,7 @@ ipfw add 1 pipe 1 src-port any
 <h6>
 <a name="osx-4" class="anchor" href="#osx-4"><span class="octicon octicon-link"></span></a>OSX</h6>
 
-<div class="highlight highlight-bash"><pre>chflags <span class="o">[</span>nohidden|hidden<span class="o">]</span> ~/Library
+<div class="highlight highlight-bash"><pre>chflags <span class="o">[</span>nohidden<span class="p">|</span>hidden<span class="o">]</span> ~/Library
 </pre></div>
 
 <hr><h1>
