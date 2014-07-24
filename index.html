@@ -39,6 +39,40 @@
         </div>
 
         <h1>
+<a name="send-plain-text-messages-via-udp" class="anchor" href="#send-plain-text-messages-via-udp"><span class="octicon octicon-link"></span></a>Send plain-text messages via UDP</h1>
+
+<h5>
+<a name="jul-24-2014" class="anchor" href="#jul-24-2014"><span class="octicon octicon-link"></span></a>(Jul 24, 2014)</h5>
+
+<h6>
+<a name="shell" class="anchor" href="#shell"><span class="octicon octicon-link"></span></a>shell</h6>
+
+<div class="highlight highlight-bash"><pre><span class="nb">echo</span> <span class="s2">"Test"</span> <span class="p">|</span> socat -u STDIO UDP-DATAGRAM:127.0.0.1:514
+</pre></div>
+
+<hr><h1>
+<a name="compare-files-with-comm" class="anchor" href="#compare-files-with-comm"><span class="octicon octicon-link"></span></a>Compare files with comm</h1>
+
+<h5>
+<a name="jul-24-2014-1" class="anchor" href="#jul-24-2014-1"><span class="octicon octicon-link"></span></a>(Jul 24, 2014)</h5>
+
+<h6>
+<a name="shell-1" class="anchor" href="#shell-1"><span class="octicon octicon-link"></span></a>shell</h6>
+
+<div class="highlight highlight-bash"><pre><span class="c"># First column: Lines unique to file1</span>
+<span class="c"># Second column: Lines unique to file2</span>
+<span class="c"># Third column: Lines common to both files</span>
+<span class="nv">$ </span>comm file1 file2
+</pre></div>
+
+<div class="highlight highlight-bash"><pre><span class="c"># Hide all columns (1, 2 &amp; 3; which makes no sense!)</span>
+<span class="nv">$ </span>comm -123 file1 file2
+
+<span class="c"># Only show common lines</span>
+<span class="nv">$ </span>comm -12 file1 file2
+</pre></div>
+
+<hr><h1>
 <a name="revert-subversion-merge" class="anchor" href="#revert-subversion-merge"><span class="octicon octicon-link"></span></a>Revert Subversion merge</h1>
 
 <h5>
@@ -209,8 +243,8 @@ general_log_file=/var/log/mysql/mysql.log
 
 <p><em>Add</em></p>
 
-<div class="highlight highlight-bash"><pre>ipfw pipe 1 config bw 100KB
-ipfw add 1 pipe 1 src-port any
+<div class="highlight highlight-bash"><pre>ipfw pipe <span class="m">1</span> config bw 100KB
+ipfw add <span class="m">1</span> pipe <span class="m">1</span> src-port any
 </pre></div>
 
 <p><em>Remove</em></p>
