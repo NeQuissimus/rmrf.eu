@@ -39,10 +39,38 @@
         </div>
 
         <h1>
-<a id="mysql-prompt" class="anchor" href="#mysql-prompt" aria-hidden="true"><span class="octicon octicon-link"></span></a>MySQL prompt</h1>
+<a id="change-jvm-from-command-line" class="anchor" href="#change-jvm-from-command-line" aria-hidden="true"><span class="octicon octicon-link"></span></a>Change JVM from command line</h1>
 
 <h5>
 <a id="nov-12-2014" class="anchor" href="#nov-12-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Nov 12, 2014)</h5>
+
+<h6>
+<a id="java-osx" class="anchor" href="#java-osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java, OSX</h6>
+
+<div class="highlight highlight-bash"><pre><span class="pl-s">function</span> <span class="pl-enf">setjdk()</span> {
+  <span class="pl-k">if</span> [ <span class="pl-v"><span class="pl-pdv">$</span>#</span> -ne 0 ]<span class="pl-ko">;</span> <span class="pl-k">then</span>
+    removeFromPath <span class="pl-s1"><span class="pl-pds">'</span>/System/Library/Frameworks/JavaVM.framework/Home/bin<span class="pl-pds">'</span></span>
+    <span class="pl-k">if</span> [ -n <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-v"><span class="pl-pdv">${</span>JAVA_HOME+x<span class="pl-pdv">}</span></span><span class="pl-pds">"</span></span> ]<span class="pl-ko">;</span> <span class="pl-k">then</span>
+      removeFromPath <span class="pl-v"><span class="pl-pdv">$</span>JAVA_HOME</span>
+    <span class="pl-k">fi</span>
+    <span class="pl-s">export</span> JAVA_HOME=<span class="pl-s1"><span class="pl-pds">`</span>/usr/libexec/java_home -v <span class="pl-v"><span class="pl-pdv">$</span>@</span><span class="pl-pds">`</span></span>
+    <span class="pl-s">export</span> PATH=<span class="pl-v"><span class="pl-pdv">$</span>JAVA_HOME</span>/bin:<span class="pl-v"><span class="pl-pdv">$</span>PATH</span>
+  <span class="pl-k">fi</span>
+}
+
+<span class="pl-s">function</span> <span class="pl-enf">removeFromPath()</span> {
+  <span class="pl-s">export</span> PATH=<span class="pl-s1"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-pds">$(</span><span class="pl-sf">echo</span> <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-v"><span class="pl-pdv">$</span>PATH</span><span class="pl-pds">"</span></span> <span class="pl-ko">|</span> sed -E -e <span class="pl-s1"><span class="pl-pds">"</span>s;:<span class="pl-v"><span class="pl-pdv">$</span>1</span>;;<span class="pl-pds">"</span></span> -e <span class="pl-s1"><span class="pl-pds">"</span>s;<span class="pl-v"><span class="pl-pdv">$</span>1</span>:?;;<span class="pl-pds">"</span></span><span class="pl-pds">)</span></span><span class="pl-pds">"</span></span>
+}
+
+setjdk 1.9</pre></div>
+
+<p><em><a href="http://www.jayway.com/2014/01/15/how-to-switch-jdk-version-on-mac-os-x-maverick/">Source</a></em></p>
+
+<h1>
+<a id="mysql-prompt" class="anchor" href="#mysql-prompt" aria-hidden="true"><span class="octicon octicon-link"></span></a>MySQL prompt</h1>
+
+<h5>
+<a id="nov-12-2014-1" class="anchor" href="#nov-12-2014-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Nov 12, 2014)</h5>
 
 <h6>
 <a id="mysql" class="anchor" href="#mysql" aria-hidden="true"><span class="octicon octicon-link"></span></a>MySQL</h6>
