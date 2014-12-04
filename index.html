@@ -39,6 +39,17 @@
         </div>
 
         <h1>
+<a id="follow-log-files" class="anchor" href="#follow-log-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Follow log files</h1>
+
+<h5>
+<a id="dec-4-2014" class="anchor" href="#dec-4-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Dec 4, 2014)</h5>
+
+<h6>
+<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux</h6>
+
+<div class="highlight highlight-bash"><pre>find /var/log/ <span class="pl-s1"><span class="pl-pds">"</span>*log<span class="pl-pds">"</span></span> -follow <span class="pl-k">|</span> egrep <span class="pl-s1"><span class="pl-pds">'</span>*log$<span class="pl-pds">'</span></span> <span class="pl-k">|</span> xargs tail -n 0 -f <span class="pl-k">|</span> grep -v <span class="pl-s1"><span class="pl-pds">'</span>^$<span class="pl-pds">'</span></span></pre></div>
+
+<h1>
 <a id="change-jvm-from-command-line" class="anchor" href="#change-jvm-from-command-line" aria-hidden="true"><span class="octicon octicon-link"></span></a>Change JVM from command line</h1>
 
 <h5>
@@ -47,19 +58,19 @@
 <h6>
 <a id="java-osx" class="anchor" href="#java-osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java, OSX</h6>
 
-<div class="highlight highlight-bash"><pre><span class="pl-s">function</span> <span class="pl-enf">setjdk()</span> {
-  <span class="pl-k">if</span> [ <span class="pl-v"><span class="pl-pdv">$</span>#</span> -ne 0 ]<span class="pl-ko">;</span> <span class="pl-k">then</span>
+<div class="highlight highlight-bash"><pre><span class="pl-st">function</span> <span class="pl-en">setjdk()</span> {
+  <span class="pl-k">if</span> [ <span class="pl-vo">$#</span> -ne 0 ]<span class="pl-k">;</span> <span class="pl-k">then</span>
     removeFromPath <span class="pl-s1"><span class="pl-pds">'</span>/System/Library/Frameworks/JavaVM.framework/Home/bin<span class="pl-pds">'</span></span>
-    <span class="pl-k">if</span> [ -n <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-v"><span class="pl-pdv">${</span>JAVA_HOME+x<span class="pl-pdv">}</span></span><span class="pl-pds">"</span></span> ]<span class="pl-ko">;</span> <span class="pl-k">then</span>
-      removeFromPath <span class="pl-v"><span class="pl-pdv">$</span>JAVA_HOME</span>
+    <span class="pl-k">if</span> [ -n <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-vo">${JAVA_HOME+x}</span><span class="pl-pds">"</span></span> ]<span class="pl-k">;</span> <span class="pl-k">then</span>
+      removeFromPath <span class="pl-vo">$JAVA_HOME</span>
     <span class="pl-k">fi</span>
-    <span class="pl-s">export</span> JAVA_HOME=<span class="pl-s1"><span class="pl-pds">`</span>/usr/libexec/java_home -v <span class="pl-v"><span class="pl-pdv">$</span>@</span><span class="pl-pds">`</span></span>
-    <span class="pl-s">export</span> PATH=<span class="pl-v"><span class="pl-pdv">$</span>JAVA_HOME</span>/bin:<span class="pl-v"><span class="pl-pdv">$</span>PATH</span>
+    <span class="pl-s">export</span> JAVA_HOME=<span class="pl-s1"><span class="pl-pds">`</span>/usr/libexec/java_home -v <span class="pl-vo">$@</span><span class="pl-pds">`</span></span>
+    <span class="pl-s">export</span> PATH=<span class="pl-vo">$JAVA_HOME</span>/bin:<span class="pl-vo">$PATH</span>
   <span class="pl-k">fi</span>
 }
 
-<span class="pl-s">function</span> <span class="pl-enf">removeFromPath()</span> {
-  <span class="pl-s">export</span> PATH=<span class="pl-s1"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-pds">$(</span><span class="pl-sf">echo</span> <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-v"><span class="pl-pdv">$</span>PATH</span><span class="pl-pds">"</span></span> <span class="pl-ko">|</span> sed -E -e <span class="pl-s1"><span class="pl-pds">"</span>s;:<span class="pl-v"><span class="pl-pdv">$</span>1</span>;;<span class="pl-pds">"</span></span> -e <span class="pl-s1"><span class="pl-pds">"</span>s;<span class="pl-v"><span class="pl-pdv">$</span>1</span>:?;;<span class="pl-pds">"</span></span><span class="pl-pds">)</span></span><span class="pl-pds">"</span></span>
+<span class="pl-st">function</span> <span class="pl-en">removeFromPath()</span> {
+  <span class="pl-s">export</span> PATH=<span class="pl-s1"><span class="pl-pds">"</span><span class="pl-s1"><span class="pl-pds">$(</span><span class="pl-s3">echo</span> <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-vo">$PATH</span><span class="pl-pds">"</span></span> <span class="pl-k">|</span> sed -E -e <span class="pl-s1"><span class="pl-pds">"</span>s;:<span class="pl-vo">$1</span>;;<span class="pl-pds">"</span></span> -e <span class="pl-s1"><span class="pl-pds">"</span>s;<span class="pl-vo">$1</span>:?;;<span class="pl-pds">"</span></span><span class="pl-pds">)</span></span><span class="pl-pds">"</span></span>
 }
 
 setjdk 1.9</pre></div>
@@ -86,7 +97,7 @@ setjdk 1.9</pre></div>
 <h6>
 <a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>git</h6>
 
-<div class="highlight highlight-bash"><pre>git config --global <span class="pl-sf">alias</span>.lg <span class="pl-s1"><span class="pl-pds">"</span>log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-bash"><pre>git config --global <span class="pl-s3">alias</span>.lg <span class="pl-s1"><span class="pl-pds">"</span>log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all<span class="pl-pds">"</span></span></pre></div>
 
 <div class="highlight highlight-bash"><pre>git lg</pre></div>
 
@@ -101,7 +112,7 @@ setjdk 1.9</pre></div>
 <h6>
 <a id="shell" class="anchor" href="#shell" aria-hidden="true"><span class="octicon octicon-link"></span></a>shell</h6>
 
-<div class="highlight highlight-bash"><pre><span class="pl-sf">echo</span> <span class="pl-s1"><span class="pl-pds">"</span>Test<span class="pl-pds">"</span></span> <span class="pl-ko">|</span> socat -u STDIO UDP-DATAGRAM:127.0.0.1:514</pre></div>
+<div class="highlight highlight-bash"><pre><span class="pl-s3">echo</span> <span class="pl-s1"><span class="pl-pds">"</span>Test<span class="pl-pds">"</span></span> <span class="pl-k">|</span> socat -u STDIO UDP-DATAGRAM:127.0.0.1:514</pre></div>
 
 <hr>
 
@@ -114,15 +125,15 @@ setjdk 1.9</pre></div>
 <h6>
 <a id="shell-1" class="anchor" href="#shell-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>shell</h6>
 
-<div class="highlight highlight-bash"><pre><span class="pl-c"><span class="pl-pdc">#</span> First column: Lines unique to file1</span>
-<span class="pl-c"><span class="pl-pdc">#</span> Second column: Lines unique to file2</span>
-<span class="pl-c"><span class="pl-pdc">#</span> Third column: Lines common to both files</span>
+<div class="highlight highlight-bash"><pre><span class="pl-c"># First column: Lines unique to file1</span>
+<span class="pl-c"># Second column: Lines unique to file2</span>
+<span class="pl-c"># Third column: Lines common to both files</span>
 $ comm file1 file2</pre></div>
 
-<div class="highlight highlight-bash"><pre><span class="pl-c"><span class="pl-pdc">#</span> Hide all columns (1, 2 &amp; 3; which makes no sense!)</span>
+<div class="highlight highlight-bash"><pre><span class="pl-c"># Hide all columns (1, 2 &amp; 3; which makes no sense!)</span>
 $ comm -123 file1 file2
 
-<span class="pl-c"><span class="pl-pdc">#</span> Only show common lines</span>
+<span class="pl-c"># Only show common lines</span>
 $ comm -12 file1 file2</pre></div>
 
 <hr>
@@ -136,7 +147,7 @@ $ comm -12 file1 file2</pre></div>
 <h6>
 <a id="subversion" class="anchor" href="#subversion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Subversion</h6>
 
-<div class="highlight highlight-bash"><pre>svn merge -c -REVISION <span class="pl-sf">.</span></pre></div>
+<div class="highlight highlight-bash"><pre>svn merge -c -REVISION <span class="pl-s3">.</span></pre></div>
 
 <hr>
 
@@ -158,7 +169,7 @@ view all     included  .1</pre></div>
 
 <p><em>Start receiver</em></p>
 
-<div class="highlight highlight-bash"><pre>sudo snmptrapd -Lf <span class="pl-ko">~</span>/.snmp/output.txt</pre></div>
+<div class="highlight highlight-bash"><pre>sudo snmptrapd -Lf <span class="pl-k">~</span>/.snmp/output.txt</pre></div>
 
 <p><em>Send sample trap</em></p>
 
@@ -175,13 +186,13 @@ view all     included  .1</pre></div>
 <h6>
 <a id="windows" class="anchor" href="#windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h6>
 
-<div class="highlight highlight-xml"><pre><span class="pl-c"><span class="pl-pdc">&lt;!--</span> The following should be saved in C:\Windows\System32\WindowsPowershell\v1.0\ (or the correct path to Windows Powershell)</span>
-<span class="pl-c"> as a file named "powershell.exe.config" <span class="pl-pdc">--&gt;</span></span>
-&lt;?<span class="pl-ent">xml</span><span class="pl-eoa"> version</span>=<span class="pl-s1"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span>?&gt;
+<div class="highlight highlight-xml"><pre><span class="pl-c">&lt;!-- The following should be saved in C:\Windows\System32\WindowsPowershell\v1.0\ (or the correct path to Windows Powershell)</span>
+<span class="pl-c"> as a file named "powershell.exe.config" --&gt;</span>
+&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s1"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span>?&gt;
 &lt;<span class="pl-ent">configuration</span>&gt;
-    &lt;<span class="pl-ent">startup</span> <span class="pl-eoa">useLegacyV2RuntimeActivationPolicy</span>=<span class="pl-s1"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent">supportedRuntime</span> <span class="pl-eoa">version</span>=<span class="pl-s1"><span class="pl-pds">"</span>v4.0.30319<span class="pl-pds">"</span></span>/&gt;
-        &lt;<span class="pl-ent">supportedRuntime</span> <span class="pl-eoa">version</span>=<span class="pl-s1"><span class="pl-pds">"</span>v2.0.50727<span class="pl-pds">"</span></span>/&gt;
+    &lt;<span class="pl-ent">startup</span> <span class="pl-e">useLegacyV2RuntimeActivationPolicy</span>=<span class="pl-s1"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">supportedRuntime</span> <span class="pl-e">version</span>=<span class="pl-s1"><span class="pl-pds">"</span>v4.0.30319<span class="pl-pds">"</span></span>/&gt;
+        &lt;<span class="pl-ent">supportedRuntime</span> <span class="pl-e">version</span>=<span class="pl-s1"><span class="pl-pds">"</span>v2.0.50727<span class="pl-pds">"</span></span>/&gt;
     &lt;/<span class="pl-ent">startup</span>&gt;
 &lt;/<span class="pl-ent">configuration</span>&gt;</pre></div>
 
@@ -196,7 +207,7 @@ view all     included  .1</pre></div>
 <h6>
 <a id="windows-1" class="anchor" href="#windows-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h6>
 
-<div class="highlight highlight-powershell"><pre><span class="pl-s">function</span> Get-FrameworkDirectory {
+<div class="highlight highlight-powershell"><pre><span class="pl-st">function</span> Get-FrameworkDirectory {
   $([System.Runtime.InteropServices.RuntimeEnvironment]::GetRuntimeDirectory())
 }</pre></div>
 
@@ -211,7 +222,7 @@ view all     included  .1</pre></div>
 <h6>
 <a id="osx-linux-1" class="anchor" href="#osx-linux-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
 
-<div class="highlight highlight-bash"><pre><span class="pl-sf">alias</span> cp=<span class="pl-s1"><span class="pl-pds">'</span>rsync --progress<span class="pl-pds">'</span></span></pre></div>
+<div class="highlight highlight-bash"><pre><span class="pl-s3">alias</span> cp=<span class="pl-s1"><span class="pl-pds">'</span>rsync --progress<span class="pl-pds">'</span></span></pre></div>
 
 <hr>
 
@@ -274,11 +285,11 @@ general_log_file=/var/log/mysql/mysql.log
 
 <p><em>List</em></p>
 
-<div class="highlight highlight-bash"><pre>sqlite3 <span class="pl-ko">~</span>/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 <span class="pl-s1"><span class="pl-pds">'</span>select LSQuarantineDataURLString from LSQuarantineEvent<span class="pl-pds">'</span></span></pre></div>
+<div class="highlight highlight-bash"><pre>sqlite3 <span class="pl-k">~</span>/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 <span class="pl-s1"><span class="pl-pds">'</span>select LSQuarantineDataURLString from LSQuarantineEvent<span class="pl-pds">'</span></span></pre></div>
 
 <p><em>Empty</em></p>
 
-<div class="highlight highlight-bash"><pre>sqlite3 <span class="pl-ko">~</span>/Library/Preferences/com.apple.LaunchServices.QuarantineEvents<span class="pl-ko">*</span> <span class="pl-s1"><span class="pl-pds">'</span>delete from LSQuarantineEvent<span class="pl-pds">'</span></span></pre></div>
+<div class="highlight highlight-bash"><pre>sqlite3 <span class="pl-k">~</span>/Library/Preferences/com.apple.LaunchServices.QuarantineEvents<span class="pl-k">*</span> <span class="pl-s1"><span class="pl-pds">'</span>delete from LSQuarantineEvent<span class="pl-pds">'</span></span></pre></div>
 
 <hr>
 
@@ -337,7 +348,7 @@ ipfw add 1 pipe 1 src-port any</pre></div>
 <h6>
 <a id="osx-4" class="anchor" href="#osx-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
 
-<div class="highlight highlight-bash"><pre>chflags [nohidden<span class="pl-ko">|</span>hidden] <span class="pl-ko">~</span>/Library</pre></div>
+<div class="highlight highlight-bash"><pre>chflags [nohidden<span class="pl-k">|</span>hidden] <span class="pl-k">~</span>/Library</pre></div>
 
 <hr>
 
