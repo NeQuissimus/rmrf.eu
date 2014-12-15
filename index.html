@@ -39,6 +39,22 @@
         </div>
 
         <h1>
+<a id="find-class-file-version" class="anchor" href="#find-class-file-version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Find class file version</h1>
+
+<h5>
+<a id="dec-15-2014" class="anchor" href="#dec-15-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Dec 15, 2014)</h5>
+
+<h6>
+<a id="java" class="anchor" href="#java" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java</h6>
+
+<div class="highlight highlight-bash"><pre>$ od -x <span class="pl-k">~</span>/dev/Test.class <span class="pl-k">|</span> head -1
+0000000      feca    beba    0000    3200    4200    0007    073d    3e00</pre></div>
+
+<p>The 3200 signals JDK 1.6, 3100 would be 1.5 etc.</p>
+
+<hr>
+
+<h1>
 <a id="follow-log-files" class="anchor" href="#follow-log-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Follow log files</h1>
 
 <h5>
