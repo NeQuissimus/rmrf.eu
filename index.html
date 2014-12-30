@@ -39,6 +39,26 @@
         </div>
 
         <h1>
+<a id="run-intellij-idea-without-java-16" class="anchor" href="#run-intellij-idea-without-java-16" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run IntelliJ IDEA without Java 1.6</h1>
+
+<h5>
+<a id="dec-30-2014" class="anchor" href="#dec-30-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Dec 30, 2014)</h5>
+
+<h6>
+<a id="java-osx" class="anchor" href="#java-osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java, OSX</h6>
+
+<ul>
+<li>Open <code>/Applications/IntelliJ\ IDEA\ 14\ CE.app/Contents/Info.plist</code>
+</li>
+<li>Find <code>JVMVersion</code>
+</li>
+<li>Change the value from <code>1.6*</code> to <code>1.8*</code>
+</li>
+</ul>
+
+<hr>
+
+<h1>
 <a id="find-class-file-version" class="anchor" href="#find-class-file-version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Find class file version</h1>
 
 <h5>
@@ -74,7 +94,7 @@
 <a id="nov-12-2014" class="anchor" href="#nov-12-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Nov 12, 2014)</h5>
 
 <h6>
-<a id="java-osx" class="anchor" href="#java-osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java, OSX</h6>
+<a id="java-osx-1" class="anchor" href="#java-osx-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java, OSX</h6>
 
 <div class="highlight highlight-bash"><pre><span class="pl-st">function</span> <span class="pl-en">setjdk()</span> {
   <span class="pl-k">if</span> [ <span class="pl-vo">$#</span> -ne 0 ]<span class="pl-k">;</span> <span class="pl-k">then</span>
