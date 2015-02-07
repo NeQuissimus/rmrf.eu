@@ -39,6 +39,20 @@
         </div>
 
         <h1>
+<a id="show-mac-cpu-model" class="anchor" href="#show-mac-cpu-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Show Mac CPU model</h1>
+
+<h5>
+<a id="feb-7-2015" class="anchor" href="#feb-7-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Feb 7, 2015)</h5>
+
+<h6>
+<a id="osx" class="anchor" href="#osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+
+<div class="highlight highlight-bash"><pre>$ sysctl -n machdep.cpu.brand_string
+Intel(R) Core(TM) i7-3770S CPU @ 3.10GHz</pre></div>
+
+<hr>
+
+<h1>
 <a id="run-intellij-idea-without-java-16" class="anchor" href="#run-intellij-idea-without-java-16" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run IntelliJ IDEA without Java 1.6</h1>
 
 <h5>
@@ -249,8 +263,8 @@ view all     included  .1</pre></div>
 <h6>
 <a id="windows-1" class="anchor" href="#windows-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h6>
 
-<div class="highlight highlight-powershell"><pre><span class="pl-st">function</span> Get-FrameworkDirectory {
-  $([System.Runtime.InteropServices.RuntimeEnvironment]::GetRuntimeDirectory())
+<div class="highlight highlight-powershell"><pre><span class="pl-st">function</span> <span class="pl-en">Get-FrameworkDirectory</span> {
+  <span class="pl-k">$(</span><span class="pl-e">[System.Runtime.InteropServices.RuntimeEnvironment]</span>::GetRuntimeDirectory<span class="pl-k">())</span>
 }</pre></div>
 
 <hr>
@@ -310,7 +324,7 @@ general_log_file=/var/log/mysql/mysql.log
 <a id="mar-29-2013" class="anchor" href="#mar-29-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Mar 29, 2013)</h5>
 
 <h6>
-<a id="osx" class="anchor" href="#osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-1" class="anchor" href="#osx-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-bash"><pre>touch /Volumes/MyDrive/.metadata_never_index</pre></div>
 
@@ -323,7 +337,7 @@ general_log_file=/var/log/mysql/mysql.log
 <a id="jan-19-2013" class="anchor" href="#jan-19-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Jan 19, 2013)</h5>
 
 <h6>
-<a id="osx-1" class="anchor" href="#osx-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-2" class="anchor" href="#osx-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
 
 <p><em>List</em></p>
 
@@ -342,7 +356,7 @@ general_log_file=/var/log/mysql/mysql.log
 <a id="aug-22-2012" class="anchor" href="#aug-22-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Aug 22, 2012)</h5>
 
 <h6>
-<a id="osx-2" class="anchor" href="#osx-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-3" class="anchor" href="#osx-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-bash"><pre>/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain <span class="pl-s">local</span> -domain system -domain user</pre></div>
 
@@ -355,7 +369,7 @@ general_log_file=/var/log/mysql/mysql.log
 <a id="apr-19-2012" class="anchor" href="#apr-19-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Apr 19, 2012)</h5>
 
 <h6>
-<a id="osx-3" class="anchor" href="#osx-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-4" class="anchor" href="#osx-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
 
 <p><em>Add</em></p>
 
@@ -388,7 +402,7 @@ ipfw add 1 pipe 1 src-port any</pre></div>
 <a id="jul-21-2011" class="anchor" href="#jul-21-2011" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Jul 21, 2011)</h5>
 
 <h6>
-<a id="osx-4" class="anchor" href="#osx-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-5" class="anchor" href="#osx-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-bash"><pre>chflags [nohidden<span class="pl-k">|</span>hidden] <span class="pl-k">~</span>/Library</pre></div>
 
@@ -415,7 +429,7 @@ ipfw add 1 pipe 1 src-port any</pre></div>
 <a id="feb-12-2011" class="anchor" href="#feb-12-2011" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Feb 12, 2011)</h5>
 
 <h6>
-<a id="osx-5" class="anchor" href="#osx-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-6" class="anchor" href="#osx-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-bash"><pre>defaults write com.apple.dock persistent-apps -array-add <span class="pl-s1"><span class="pl-pds">'</span>{tile-data={}; tile-type="spacer-tile";}<span class="pl-pds">'</span></span>
 killall Dock</pre></div>
@@ -429,7 +443,7 @@ killall Dock</pre></div>
 <a id="oct-6-2010" class="anchor" href="#oct-6-2010" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Oct 6, 2010)</h5>
 
 <h6>
-<a id="osx-6" class="anchor" href="#osx-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-7" class="anchor" href="#osx-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-bash"><pre>sudo mdutil -E /</pre></div>
 
@@ -442,7 +456,7 @@ killall Dock</pre></div>
 <a id="sep-21-2010" class="anchor" href="#sep-21-2010" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Sep 21, 2010)</h5>
 
 <h6>
-<a id="osx-7" class="anchor" href="#osx-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-8" class="anchor" href="#osx-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-bash"><pre>sudo periodic daily weekly monthly</pre></div>
 
