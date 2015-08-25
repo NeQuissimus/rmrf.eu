@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>rm -rf / by NeQuissimus</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
@@ -39,6 +39,27 @@
         </div>
 
         <h1>
+<a id="revert-esxi-snapshot-from-the-cli" class="anchor" href="#revert-esxi-snapshot-from-the-cli" aria-hidden="true"><span class="octicon octicon-link"></span></a>Revert ESXi snapshot from the CLI</h1>
+
+<h5>
+<a id="aug-25-2015" class="anchor" href="#aug-25-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Aug 25, 2015)</h5>
+
+<h6>
+<a id="esxi-vmware" class="anchor" href="#esxi-vmware" aria-hidden="true"><span class="octicon octicon-link"></span></a>ESXi, VMware</h6>
+
+<div class="highlight highlight-bash"><pre>$ vim-cmd vmsvc/getallvms</pre></div>
+
+<p>VMID is the first column</p>
+
+<div class="highlight highlight-bash"><pre>$ vim-cmd vmsvc/snapshot.get <span class="pl-smi">${VMID}</span></pre></div>
+
+<p>Find snapshot ID</p>
+
+<div class="highlight highlight-bash"><pre>$ vim-cmd vmsvc/snapshot.revert <span class="pl-smi">${VMID}</span> <span class="pl-smi">${SNAPID}</span> <span class="pl-c1">false</span></pre></div>
+
+<hr>
+
+<h1>
 <a id="grab-images-from-instagram-app" class="anchor" href="#grab-images-from-instagram-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grab images from Instagram app</h1>
 
 <h5>
