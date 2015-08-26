@@ -39,6 +39,19 @@
         </div>
 
         <h1>
+<a id="environment-variables-for-a-pid" class="anchor" href="#environment-variables-for-a-pid" aria-hidden="true"><span class="octicon octicon-link"></span></a>Environment variables for a PID</h1>
+
+<h5>
+<a id="aug-26-2015" class="anchor" href="#aug-26-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Aug 26, 2015)</h5>
+
+<h6>
+<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux</h6>
+
+<div class="highlight highlight-bash"><pre>$ cat /proc/<span class="pl-smi">${PID}</span>/environ</pre></div>
+
+<hr>
+
+<h1>
 <a id="revert-esxi-snapshot-from-the-cli" class="anchor" href="#revert-esxi-snapshot-from-the-cli" aria-hidden="true"><span class="octicon octicon-link"></span></a>Revert ESXi snapshot from the CLI</h1>
 
 <h5>
@@ -133,7 +146,7 @@ Intel(R) Core(TM) i7-3770S CPU @ 3.10GHz</pre></div>
 <a id="dec-4-2014" class="anchor" href="#dec-4-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Dec 4, 2014)</h5>
 
 <h6>
-<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux</h6>
+<a id="linux-1" class="anchor" href="#linux-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux</h6>
 
 <div class="highlight highlight-bash"><pre>find /var/log/ -name <span class="pl-s"><span class="pl-pds">"</span>*log<span class="pl-pds">"</span></span> -type f -follow <span class="pl-k">|</span> xargs tail -n 0 -f <span class="pl-k">|</span> grep -v <span class="pl-s"><span class="pl-pds">'</span>^$<span class="pl-pds">'</span></span></pre></div>
 
