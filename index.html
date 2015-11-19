@@ -49,6 +49,8 @@
 
 <div class="highlight highlight-source-shell"><pre>$ <span class="pl-k">export</span> N=100<span class="pl-k">;</span> <span class="pl-k">for</span> <span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-s"><span class="pl-pds">$(</span>git log --abbrev-commit --format=format:<span class="pl-s"><span class="pl-pds">'</span>%h<span class="pl-pds">'</span></span> --all  <span class="pl-smi">${FILE}</span><span class="pl-pds">)</span></span><span class="pl-k">;</span> <span class="pl-k">do</span> N=<span class="pl-s"><span class="pl-pds">$((</span>N<span class="pl-k">+</span><span class="pl-c1">1</span><span class="pl-pds">))</span></span><span class="pl-k">;</span> git diff <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">${i}</span>^..<span class="pl-smi">${i}</span><span class="pl-pds">"</span></span> <span class="pl-k">&gt;</span> <span class="pl-smi">${N}</span>-<span class="pl-smi">${i}</span>.patch<span class="pl-k">;</span> <span class="pl-k">done</span></pre></div>
 
+<hr>
+
 <h1>
 <a id="run-specific-tests-in-maven" class="anchor" href="#run-specific-tests-in-maven" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run specific tests in Maven</h1>
 
@@ -59,6 +61,8 @@
 <a id="maven" class="anchor" href="#maven" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maven</h6>
 
 <div class="highlight highlight-source-shell"><pre>$ mvn <span class="pl-c1">test</span> -Dtest=com.nequissimus.<span class="pl-k">*</span>Test</pre></div>
+
+<hr>
 
 <h1>
 <a id="environment-variables-for-a-pid" class="anchor" href="#environment-variables-for-a-pid" aria-hidden="true"><span class="octicon octicon-link"></span></a>Environment variables for a PID</h1>
