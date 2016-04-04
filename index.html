@@ -39,52 +39,65 @@
         </div>
 
         <h1>
-<a id="get-all-patch-files-for-git-revisions" class="anchor" href="#get-all-patch-files-for-git-revisions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get all patch files for Git revisions</h1>
+<a id="disable-caps-lock" class="anchor" href="#disable-caps-lock" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disable CAPS LOCK</h1>
 
 <h5>
-<a id="nov-19-2015" class="anchor" href="#nov-19-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Nov 19, 2015)</h5>
+<a id="apr-04-2016" class="anchor" href="#apr-04-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Apr 04, 2016)</h5>
 
 <h6>
-<a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git</h6>
+<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux</h6>
+
+<div class="highlight highlight-source-shell"><pre>setxkbmap -option ctrl:nocaps</pre></div>
+
+<hr>
+
+<h1>
+<a id="get-all-patch-files-for-git-revisions" class="anchor" href="#get-all-patch-files-for-git-revisions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get all patch files for Git revisions</h1>
+
+<h5>
+<a id="nov-19-2015" class="anchor" href="#nov-19-2015" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Nov 19, 2015)</h5>
+
+<h6>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git</h6>
 
 <div class="highlight highlight-source-shell"><pre>$ <span class="pl-k">export</span> N=100<span class="pl-k">;</span> <span class="pl-k">for</span> <span class="pl-smi">i</span> <span class="pl-k">in</span> <span class="pl-s"><span class="pl-pds">$(</span>git log --abbrev-commit --format=format:<span class="pl-s"><span class="pl-pds">'</span>%h<span class="pl-pds">'</span></span> --all  <span class="pl-smi">${FILE}</span><span class="pl-pds">)</span></span><span class="pl-k">;</span> <span class="pl-k">do</span> N=<span class="pl-s"><span class="pl-pds">$((</span>N<span class="pl-k">+</span><span class="pl-c1">1</span><span class="pl-pds">))</span></span><span class="pl-k">;</span> git diff <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">${i}</span>^..<span class="pl-smi">${i}</span><span class="pl-pds">"</span></span> <span class="pl-k">&gt;</span> <span class="pl-smi">${N}</span>-<span class="pl-smi">${i}</span>.patch<span class="pl-k">;</span> <span class="pl-k">done</span></pre></div>
 
 <hr>
 
 <h1>
-<a id="run-specific-tests-in-maven" class="anchor" href="#run-specific-tests-in-maven" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run specific tests in Maven</h1>
+<a id="run-specific-tests-in-maven" class="anchor" href="#run-specific-tests-in-maven" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run specific tests in Maven</h1>
 
 <h5>
-<a id="nov-19-2015-1" class="anchor" href="#nov-19-2015-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Nov 19, 2015)</h5>
+<a id="nov-19-2015-1" class="anchor" href="#nov-19-2015-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Nov 19, 2015)</h5>
 
 <h6>
-<a id="maven" class="anchor" href="#maven" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maven</h6>
+<a id="maven" class="anchor" href="#maven" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Maven</h6>
 
 <div class="highlight highlight-source-shell"><pre>$ mvn <span class="pl-c1">test</span> -Dtest=com.nequissimus.<span class="pl-k">*</span>Test</pre></div>
 
 <hr>
 
 <h1>
-<a id="environment-variables-for-a-pid" class="anchor" href="#environment-variables-for-a-pid" aria-hidden="true"><span class="octicon octicon-link"></span></a>Environment variables for a PID</h1>
+<a id="environment-variables-for-a-pid" class="anchor" href="#environment-variables-for-a-pid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Environment variables for a PID</h1>
 
 <h5>
-<a id="aug-26-2015" class="anchor" href="#aug-26-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Aug 26, 2015)</h5>
+<a id="aug-26-2015" class="anchor" href="#aug-26-2015" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Aug 26, 2015)</h5>
 
 <h6>
-<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux</h6>
+<a id="linux-1" class="anchor" href="#linux-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux</h6>
 
 <div class="highlight highlight-source-shell"><pre>$ cat /proc/<span class="pl-smi">${PID}</span>/environ</pre></div>
 
 <hr>
 
 <h1>
-<a id="revert-esxi-snapshot-from-the-cli" class="anchor" href="#revert-esxi-snapshot-from-the-cli" aria-hidden="true"><span class="octicon octicon-link"></span></a>Revert ESXi snapshot from the CLI</h1>
+<a id="revert-esxi-snapshot-from-the-cli" class="anchor" href="#revert-esxi-snapshot-from-the-cli" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Revert ESXi snapshot from the CLI</h1>
 
 <h5>
-<a id="aug-25-2015" class="anchor" href="#aug-25-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Aug 25, 2015)</h5>
+<a id="aug-25-2015" class="anchor" href="#aug-25-2015" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Aug 25, 2015)</h5>
 
 <h6>
-<a id="esxi-vmware" class="anchor" href="#esxi-vmware" aria-hidden="true"><span class="octicon octicon-link"></span></a>ESXi, VMware</h6>
+<a id="esxi-vmware" class="anchor" href="#esxi-vmware" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ESXi, VMware</h6>
 
 <div class="highlight highlight-source-shell"><pre>$ vim-cmd vmsvc/getallvms</pre></div>
 
@@ -99,13 +112,13 @@
 <hr>
 
 <h1>
-<a id="grab-images-from-instagram-app" class="anchor" href="#grab-images-from-instagram-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grab images from Instagram app</h1>
+<a id="grab-images-from-instagram-app" class="anchor" href="#grab-images-from-instagram-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grab images from Instagram app</h1>
 
 <h5>
-<a id="mar-31-2015" class="anchor" href="#mar-31-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Mar 31, 2015)</h5>
+<a id="mar-31-2015" class="anchor" href="#mar-31-2015" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Mar 31, 2015)</h5>
 
 <h6>
-<a id="android" class="anchor" href="#android" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android</h6>
+<a id="android" class="anchor" href="#android" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android</h6>
 
 <div class="highlight highlight-source-shell"><pre>$ adb root
 $ mkdir <span class="pl-k">~</span>/Downloads/instagram
@@ -116,13 +129,13 @@ $ open <span class="pl-k">~</span>/Downloads/instagram</pre></div>
 <hr>
 
 <h1>
-<a id="show-mac-cpu-model" class="anchor" href="#show-mac-cpu-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Show Mac CPU model</h1>
+<a id="show-mac-cpu-model" class="anchor" href="#show-mac-cpu-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Show Mac CPU model</h1>
 
 <h5>
-<a id="feb-7-2015" class="anchor" href="#feb-7-2015" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Feb 7, 2015)</h5>
+<a id="feb-7-2015" class="anchor" href="#feb-7-2015" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Feb 7, 2015)</h5>
 
 <h6>
-<a id="osx" class="anchor" href="#osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx" class="anchor" href="#osx" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-source-shell"><pre>$ sysctl -n machdep.cpu.brand_string
 Intel(R) Core(TM) i7-3770S CPU @ 3.10GHz</pre></div>
@@ -130,13 +143,13 @@ Intel(R) Core(TM) i7-3770S CPU @ 3.10GHz</pre></div>
 <hr>
 
 <h1>
-<a id="run-intellij-idea-without-java-16" class="anchor" href="#run-intellij-idea-without-java-16" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run IntelliJ IDEA without Java 1.6</h1>
+<a id="run-intellij-idea-without-java-16" class="anchor" href="#run-intellij-idea-without-java-16" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run IntelliJ IDEA without Java 1.6</h1>
 
 <h5>
-<a id="dec-30-2014" class="anchor" href="#dec-30-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Dec 30, 2014)</h5>
+<a id="dec-30-2014" class="anchor" href="#dec-30-2014" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Dec 30, 2014)</h5>
 
 <h6>
-<a id="java-osx" class="anchor" href="#java-osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java, OSX</h6>
+<a id="java-osx" class="anchor" href="#java-osx" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java, OSX</h6>
 
 <ul>
 <li>Open <code>/Applications/IntelliJ\ IDEA\ 14\ CE.app/Contents/Info.plist</code>
@@ -150,13 +163,13 @@ Intel(R) Core(TM) i7-3770S CPU @ 3.10GHz</pre></div>
 <hr>
 
 <h1>
-<a id="find-class-file-version" class="anchor" href="#find-class-file-version" aria-hidden="true"><span class="octicon octicon-link"></span></a>Find class file version</h1>
+<a id="find-class-file-version" class="anchor" href="#find-class-file-version" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Find class file version</h1>
 
 <h5>
-<a id="dec-15-2014" class="anchor" href="#dec-15-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Dec 15, 2014)</h5>
+<a id="dec-15-2014" class="anchor" href="#dec-15-2014" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Dec 15, 2014)</h5>
 
 <h6>
-<a id="java" class="anchor" href="#java" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java</h6>
+<a id="java" class="anchor" href="#java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java</h6>
 
 <div class="highlight highlight-source-shell"><pre>$ od -x <span class="pl-k">~</span>/dev/Test.class <span class="pl-k">|</span> head -1
 0000000      feca    beba    0000    3200    4200    0007    073d    3e00</pre></div>
@@ -166,26 +179,26 @@ Intel(R) Core(TM) i7-3770S CPU @ 3.10GHz</pre></div>
 <hr>
 
 <h1>
-<a id="follow-log-files" class="anchor" href="#follow-log-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Follow log files</h1>
+<a id="follow-log-files" class="anchor" href="#follow-log-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Follow log files</h1>
 
 <h5>
-<a id="dec-4-2014" class="anchor" href="#dec-4-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Dec 4, 2014)</h5>
+<a id="dec-4-2014" class="anchor" href="#dec-4-2014" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Dec 4, 2014)</h5>
 
 <h6>
-<a id="linux-1" class="anchor" href="#linux-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux</h6>
+<a id="linux-2" class="anchor" href="#linux-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux</h6>
 
 <div class="highlight highlight-source-shell"><pre>find /var/log/ -name <span class="pl-s"><span class="pl-pds">"</span>*log<span class="pl-pds">"</span></span> -type f -follow <span class="pl-k">|</span> xargs tail -n 0 -f <span class="pl-k">|</span> grep -v <span class="pl-s"><span class="pl-pds">'</span>^$<span class="pl-pds">'</span></span></pre></div>
 
 <hr>
 
 <h1>
-<a id="change-jvm-from-command-line" class="anchor" href="#change-jvm-from-command-line" aria-hidden="true"><span class="octicon octicon-link"></span></a>Change JVM from command line</h1>
+<a id="change-jvm-from-command-line" class="anchor" href="#change-jvm-from-command-line" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Change JVM from command line</h1>
 
 <h5>
-<a id="nov-12-2014" class="anchor" href="#nov-12-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Nov 12, 2014)</h5>
+<a id="nov-12-2014" class="anchor" href="#nov-12-2014" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Nov 12, 2014)</h5>
 
 <h6>
-<a id="java-osx-1" class="anchor" href="#java-osx-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java, OSX</h6>
+<a id="java-osx-1" class="anchor" href="#java-osx-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java, OSX</h6>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-k">function</span> <span class="pl-en">setjdk()</span> {
   <span class="pl-k">if</span> [ <span class="pl-smi">$#</span> <span class="pl-k">-ne</span> 0 ]<span class="pl-k">;</span> <span class="pl-k">then</span>
@@ -209,26 +222,26 @@ setjdk 1.9</pre></div>
 <hr>
 
 <h1>
-<a id="mysql-prompt" class="anchor" href="#mysql-prompt" aria-hidden="true"><span class="octicon octicon-link"></span></a>MySQL prompt</h1>
+<a id="mysql-prompt" class="anchor" href="#mysql-prompt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL prompt</h1>
 
 <h5>
-<a id="nov-12-2014-1" class="anchor" href="#nov-12-2014-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Nov 12, 2014)</h5>
+<a id="nov-12-2014-1" class="anchor" href="#nov-12-2014-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Nov 12, 2014)</h5>
 
 <h6>
-<a id="mysql" class="anchor" href="#mysql" aria-hidden="true"><span class="octicon octicon-link"></span></a>MySQL</h6>
+<a id="mysql" class="anchor" href="#mysql" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL</h6>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-k">export</span> MYSQL_PS1=<span class="pl-s"><span class="pl-pds">"</span>\u@\d&gt; <span class="pl-pds">"</span></span></pre></div>
 
 <hr>
 
 <h1>
-<a id="single-line-git-commit-history" class="anchor" href="#single-line-git-commit-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Single-line git commit history</h1>
+<a id="single-line-git-commit-history" class="anchor" href="#single-line-git-commit-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Single-line git commit history</h1>
 
 <h5>
-<a id="jul-28-2014" class="anchor" href="#jul-28-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Jul 28, 2014)</h5>
+<a id="jul-28-2014" class="anchor" href="#jul-28-2014" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Jul 28, 2014)</h5>
 
 <h6>
-<a id="git-1" class="anchor" href="#git-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>git</h6>
+<a id="git-1" class="anchor" href="#git-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git</h6>
 
 <div class="highlight highlight-source-shell"><pre>git config --global <span class="pl-c1">alias</span>.lg <span class="pl-s"><span class="pl-pds">"</span>log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all<span class="pl-pds">"</span></span></pre></div>
 
@@ -237,26 +250,26 @@ setjdk 1.9</pre></div>
 <hr>
 
 <h1>
-<a id="send-plain-text-messages-via-udp" class="anchor" href="#send-plain-text-messages-via-udp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Send plain-text messages via UDP</h1>
+<a id="send-plain-text-messages-via-udp" class="anchor" href="#send-plain-text-messages-via-udp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Send plain-text messages via UDP</h1>
 
 <h5>
-<a id="jul-24-2014" class="anchor" href="#jul-24-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Jul 24, 2014)</h5>
+<a id="jul-24-2014" class="anchor" href="#jul-24-2014" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Jul 24, 2014)</h5>
 
 <h6>
-<a id="shell" class="anchor" href="#shell" aria-hidden="true"><span class="octicon octicon-link"></span></a>shell</h6>
+<a id="shell" class="anchor" href="#shell" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>shell</h6>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">"</span>Test<span class="pl-pds">"</span></span> <span class="pl-k">|</span> socat -u STDIO UDP-DATAGRAM:127.0.0.1:514</pre></div>
 
 <hr>
 
 <h1>
-<a id="compare-files-with-comm" class="anchor" href="#compare-files-with-comm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compare files with comm</h1>
+<a id="compare-files-with-comm" class="anchor" href="#compare-files-with-comm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compare files with comm</h1>
 
 <h5>
-<a id="jul-24-2014-1" class="anchor" href="#jul-24-2014-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Jul 24, 2014)</h5>
+<a id="jul-24-2014-1" class="anchor" href="#jul-24-2014-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Jul 24, 2014)</h5>
 
 <h6>
-<a id="shell-1" class="anchor" href="#shell-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>shell</h6>
+<a id="shell-1" class="anchor" href="#shell-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>shell</h6>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-c"># First column: Lines unique to file1</span>
 <span class="pl-c"># Second column: Lines unique to file2</span>
@@ -272,26 +285,26 @@ $ comm -12 file1 file2</pre></div>
 <hr>
 
 <h1>
-<a id="revert-subversion-merge" class="anchor" href="#revert-subversion-merge" aria-hidden="true"><span class="octicon octicon-link"></span></a>Revert Subversion merge</h1>
+<a id="revert-subversion-merge" class="anchor" href="#revert-subversion-merge" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Revert Subversion merge</h1>
 
 <h5>
-<a id="apr-16-2014" class="anchor" href="#apr-16-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Apr 16, 2014)</h5>
+<a id="apr-16-2014" class="anchor" href="#apr-16-2014" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Apr 16, 2014)</h5>
 
 <h6>
-<a id="subversion" class="anchor" href="#subversion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Subversion</h6>
+<a id="subversion" class="anchor" href="#subversion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Subversion</h6>
 
 <div class="highlight highlight-source-shell"><pre>svn merge -c -REVISION <span class="pl-c1">.</span></pre></div>
 
 <hr>
 
 <h1>
-<a id="sendreceive-snmp-traps" class="anchor" href="#sendreceive-snmp-traps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Send/Receive SNMP traps</h1>
+<a id="sendreceive-snmp-traps" class="anchor" href="#sendreceive-snmp-traps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Send/Receive SNMP traps</h1>
 
 <h5>
-<a id="sep-17-2013" class="anchor" href="#sep-17-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
+<a id="sep-17-2013" class="anchor" href="#sep-17-2013" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
 
 <h6>
-<a id="osx-linux" class="anchor" href="#osx-linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
+<a id="osx-linux" class="anchor" href="#osx-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX, Linux</h6>
 
 <p><em>~/.snmp/snmptrapd.conf</em></p>
 
@@ -311,13 +324,13 @@ view all     included  .1</pre></div>
 <hr>
 
 <h1>
-<a id="change-net-framework-in-powershell" class="anchor" href="#change-net-framework-in-powershell" aria-hidden="true"><span class="octicon octicon-link"></span></a>Change .NET framework in Powershell</h1>
+<a id="change-net-framework-in-powershell" class="anchor" href="#change-net-framework-in-powershell" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Change .NET framework in Powershell</h1>
 
 <h5>
-<a id="sep-17-2013-1" class="anchor" href="#sep-17-2013-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
+<a id="sep-17-2013-1" class="anchor" href="#sep-17-2013-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
 
 <h6>
-<a id="windows" class="anchor" href="#windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h6>
+<a id="windows" class="anchor" href="#windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Windows</h6>
 
 <div class="highlight highlight-text-xml"><pre><span class="pl-c">&lt;!-- The following should be saved in C:\Windows\System32\WindowsPowershell\v1.0\ (or the correct path to Windows Powershell)</span>
 <span class="pl-c"> as a file named "powershell.exe.config" --&gt;</span>
@@ -332,13 +345,13 @@ view all     included  .1</pre></div>
 <hr>
 
 <h1>
-<a id="path-to-net-framework" class="anchor" href="#path-to-net-framework" aria-hidden="true"><span class="octicon octicon-link"></span></a>Path to .NET Framework</h1>
+<a id="path-to-net-framework" class="anchor" href="#path-to-net-framework" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Path to .NET Framework</h1>
 
 <h5>
-<a id="sep-17-2013-2" class="anchor" href="#sep-17-2013-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
+<a id="sep-17-2013-2" class="anchor" href="#sep-17-2013-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Sep 17, 2013)</h5>
 
 <h6>
-<a id="windows-1" class="anchor" href="#windows-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h6>
+<a id="windows-1" class="anchor" href="#windows-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Windows</h6>
 
 <div class="highlight highlight-source-powershell"><pre><span class="pl-k">function</span> <span class="pl-en">Get-FrameworkDirectory</span> {
   <span class="pl-k">$(</span><span class="pl-e">[System.Runtime.InteropServices.RuntimeEnvironment]</span>::GetRuntimeDirectory<span class="pl-k">())</span>
@@ -347,39 +360,39 @@ view all     included  .1</pre></div>
 <hr>
 
 <h1>
-<a id="copy-files-with-progress" class="anchor" href="#copy-files-with-progress" aria-hidden="true"><span class="octicon octicon-link"></span></a>Copy files with progress</h1>
+<a id="copy-files-with-progress" class="anchor" href="#copy-files-with-progress" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Copy files with progress</h1>
 
 <h5>
-<a id="sep-16-2013" class="anchor" href="#sep-16-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
+<a id="sep-16-2013" class="anchor" href="#sep-16-2013" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
 
 <h6>
-<a id="osx-linux-1" class="anchor" href="#osx-linux-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
+<a id="osx-linux-1" class="anchor" href="#osx-linux-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX, Linux</h6>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-c1">alias</span> cp=<span class="pl-s"><span class="pl-pds">'</span>rsync --progress<span class="pl-pds">'</span></span></pre></div>
 
 <hr>
 
 <h1>
-<a id="remove-key-from-known_hosts" class="anchor" href="#remove-key-from-known_hosts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Remove key from known_hosts</h1>
+<a id="remove-key-from-known_hosts" class="anchor" href="#remove-key-from-known_hosts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Remove key from known_hosts</h1>
 
 <h5>
-<a id="sep-16-2013-1" class="anchor" href="#sep-16-2013-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
+<a id="sep-16-2013-1" class="anchor" href="#sep-16-2013-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
 
 <h6>
-<a id="osx-linux-2" class="anchor" href="#osx-linux-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX, Linux</h6>
+<a id="osx-linux-2" class="anchor" href="#osx-linux-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX, Linux</h6>
 
 <div class="highlight highlight-source-shell"><pre>ssh-keygen -R HOST</pre></div>
 
 <hr>
 
 <h1>
-<a id="mysql-log" class="anchor" href="#mysql-log" aria-hidden="true"><span class="octicon octicon-link"></span></a>MySQL log</h1>
+<a id="mysql-log" class="anchor" href="#mysql-log" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL log</h1>
 
 <h5>
-<a id="sep-16-2013-2" class="anchor" href="#sep-16-2013-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
+<a id="sep-16-2013-2" class="anchor" href="#sep-16-2013-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
 
 <h6>
-<a id="mysql-1" class="anchor" href="#mysql-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>MySQL</h6>
+<a id="mysql-1" class="anchor" href="#mysql-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL</h6>
 
 <p><em>my.cnf.51</em></p>
 
@@ -395,26 +408,26 @@ general_log_file=/var/log/mysql/mysql.log
 <hr>
 
 <h1>
-<a id="prevent-spotlight-indexing" class="anchor" href="#prevent-spotlight-indexing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prevent Spotlight indexing</h1>
+<a id="prevent-spotlight-indexing" class="anchor" href="#prevent-spotlight-indexing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prevent Spotlight indexing</h1>
 
 <h5>
-<a id="mar-29-2013" class="anchor" href="#mar-29-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Mar 29, 2013)</h5>
+<a id="mar-29-2013" class="anchor" href="#mar-29-2013" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Mar 29, 2013)</h5>
 
 <h6>
-<a id="osx-1" class="anchor" href="#osx-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-1" class="anchor" href="#osx-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-source-shell"><pre>touch /Volumes/MyDrive/.metadata_never_index</pre></div>
 
 <hr>
 
 <h1>
-<a id="listclear-downloaded-files-list-in-osx" class="anchor" href="#listclear-downloaded-files-list-in-osx" aria-hidden="true"><span class="octicon octicon-link"></span></a>List/Clear downloaded files list in OSX</h1>
+<a id="listclear-downloaded-files-list-in-osx" class="anchor" href="#listclear-downloaded-files-list-in-osx" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List/Clear downloaded files list in OSX</h1>
 
 <h5>
-<a id="jan-19-2013" class="anchor" href="#jan-19-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Jan 19, 2013)</h5>
+<a id="jan-19-2013" class="anchor" href="#jan-19-2013" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Jan 19, 2013)</h5>
 
 <h6>
-<a id="osx-2" class="anchor" href="#osx-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-2" class="anchor" href="#osx-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX</h6>
 
 <p><em>List</em></p>
 
@@ -427,26 +440,26 @@ general_log_file=/var/log/mysql/mysql.log
 <hr>
 
 <h1>
-<a id="rebuild-context-menu-entries" class="anchor" href="#rebuild-context-menu-entries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rebuild context menu entries</h1>
+<a id="rebuild-context-menu-entries" class="anchor" href="#rebuild-context-menu-entries" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rebuild context menu entries</h1>
 
 <h5>
-<a id="aug-22-2012" class="anchor" href="#aug-22-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Aug 22, 2012)</h5>
+<a id="aug-22-2012" class="anchor" href="#aug-22-2012" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Aug 22, 2012)</h5>
 
 <h6>
-<a id="osx-3" class="anchor" href="#osx-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-3" class="anchor" href="#osx-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-source-shell"><pre>/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain <span class="pl-k">local</span> -domain system -domain user</pre></div>
 
 <hr>
 
 <h1>
-<a id="limit-bandwidth" class="anchor" href="#limit-bandwidth" aria-hidden="true"><span class="octicon octicon-link"></span></a>Limit bandwidth</h1>
+<a id="limit-bandwidth" class="anchor" href="#limit-bandwidth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Limit bandwidth</h1>
 
 <h5>
-<a id="apr-19-2012" class="anchor" href="#apr-19-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Apr 19, 2012)</h5>
+<a id="apr-19-2012" class="anchor" href="#apr-19-2012" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Apr 19, 2012)</h5>
 
 <h6>
-<a id="osx-4" class="anchor" href="#osx-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-4" class="anchor" href="#osx-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX</h6>
 
 <p><em>Add</em></p>
 
@@ -460,39 +473,39 @@ ipfw add 1 pipe 1 src-port any</pre></div>
 <hr>
 
 <h1>
-<a id="headless-vmware-fusion" class="anchor" href="#headless-vmware-fusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Headless VMware Fusion</h1>
+<a id="headless-vmware-fusion" class="anchor" href="#headless-vmware-fusion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Headless VMware Fusion</h1>
 
 <h5>
-<a id="feb-17-2012" class="anchor" href="#feb-17-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Feb 17, 2012)</h5>
+<a id="feb-17-2012" class="anchor" href="#feb-17-2012" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Feb 17, 2012)</h5>
 
 <h6>
-<a id="osx-vmware-fusion" class="anchor" href="#osx-vmware-fusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX, VMware Fusion</h6>
+<a id="osx-vmware-fusion" class="anchor" href="#osx-vmware-fusion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX, VMware Fusion</h6>
 
 <div class="highlight highlight-source-shell"><pre>/Library/Application<span class="pl-cce">\ </span>Support/VMware<span class="pl-cce">\ </span>Fusion/vmrun -T fusion start /Volumes/VMs/_Hadoop/Hadoop<span class="pl-cce">\ </span>Master.vmwarevm/Hadoop<span class="pl-cce">\ </span>Master.vmx nogui</pre></div>
 
 <hr>
 
 <h1>
-<a id="hideshow-library" class="anchor" href="#hideshow-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hide/Show ~/Library</h1>
+<a id="hideshow-library" class="anchor" href="#hideshow-library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hide/Show ~/Library</h1>
 
 <h5>
-<a id="jul-21-2011" class="anchor" href="#jul-21-2011" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Jul 21, 2011)</h5>
+<a id="jul-21-2011" class="anchor" href="#jul-21-2011" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Jul 21, 2011)</h5>
 
 <h6>
-<a id="osx-5" class="anchor" href="#osx-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-5" class="anchor" href="#osx-5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-source-shell"><pre>chflags [nohidden<span class="pl-k">|</span>hidden] <span class="pl-k">~</span>/Library</pre></div>
 
 <hr>
 
 <h1>
-<a id="force-login-via-rdp" class="anchor" href="#force-login-via-rdp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Force login via RDP</h1>
+<a id="force-login-via-rdp" class="anchor" href="#force-login-via-rdp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Force login via RDP</h1>
 
 <h5>
-<a id="mar-11-2011" class="anchor" href="#mar-11-2011" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Mar 11, 2011)</h5>
+<a id="mar-11-2011" class="anchor" href="#mar-11-2011" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Mar 11, 2011)</h5>
 
 <h6>
-<a id="windows-2" class="anchor" href="#windows-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h6>
+<a id="windows-2" class="anchor" href="#windows-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Windows</h6>
 
 <pre><code>mstsc /v:123.123.123.123 /admin
 </code></pre>
@@ -500,13 +513,13 @@ ipfw add 1 pipe 1 src-port any</pre></div>
 <hr>
 
 <h1>
-<a id="blank-dockapp-icon" class="anchor" href="#blank-dockapp-icon" aria-hidden="true"><span class="octicon octicon-link"></span></a>Blank Dock.app icon</h1>
+<a id="blank-dockapp-icon" class="anchor" href="#blank-dockapp-icon" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blank Dock.app icon</h1>
 
 <h5>
-<a id="feb-12-2011" class="anchor" href="#feb-12-2011" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Feb 12, 2011)</h5>
+<a id="feb-12-2011" class="anchor" href="#feb-12-2011" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Feb 12, 2011)</h5>
 
 <h6>
-<a id="osx-6" class="anchor" href="#osx-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-6" class="anchor" href="#osx-6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-source-shell"><pre>defaults write com.apple.dock persistent-apps -array-add <span class="pl-s"><span class="pl-pds">'</span>{tile-data={}; tile-type="spacer-tile";}<span class="pl-pds">'</span></span>
 killall Dock</pre></div>
@@ -514,26 +527,26 @@ killall Dock</pre></div>
 <hr>
 
 <h1>
-<a id="rebuild-spotlight-index" class="anchor" href="#rebuild-spotlight-index" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rebuild Spotlight index</h1>
+<a id="rebuild-spotlight-index" class="anchor" href="#rebuild-spotlight-index" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rebuild Spotlight index</h1>
 
 <h5>
-<a id="oct-6-2010" class="anchor" href="#oct-6-2010" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Oct 6, 2010)</h5>
+<a id="oct-6-2010" class="anchor" href="#oct-6-2010" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Oct 6, 2010)</h5>
 
 <h6>
-<a id="osx-7" class="anchor" href="#osx-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-7" class="anchor" href="#osx-7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-source-shell"><pre>sudo mdutil -E /</pre></div>
 
 <hr>
 
 <h1>
-<a id="trigger-osx-maintenance-scripts" class="anchor" href="#trigger-osx-maintenance-scripts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trigger OSX maintenance scripts</h1>
+<a id="trigger-osx-maintenance-scripts" class="anchor" href="#trigger-osx-maintenance-scripts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trigger OSX maintenance scripts</h1>
 
 <h5>
-<a id="sep-21-2010" class="anchor" href="#sep-21-2010" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Sep 21, 2010)</h5>
+<a id="sep-21-2010" class="anchor" href="#sep-21-2010" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Sep 21, 2010)</h5>
 
 <h6>
-<a id="osx-8" class="anchor" href="#osx-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>OSX</h6>
+<a id="osx-8" class="anchor" href="#osx-8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX</h6>
 
 <div class="highlight highlight-source-shell"><pre>sudo periodic daily weekly monthly</pre></div>
 
