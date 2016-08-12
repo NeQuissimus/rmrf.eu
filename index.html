@@ -39,6 +39,27 @@
         </div>
 
         <h1>
+<a id="largest-mysql-tables" class="anchor" href="#largest-mysql-tables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Largest MySQL tables</h1>
+
+<h5>
+<a id="aug-12-2016" class="anchor" href="#aug-12-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Aug 12, 2016)</h5>
+
+<h6>
+<a id="mysql" class="anchor" href="#mysql" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL</h6>
+
+<div class="highlight highlight-source-sql"><pre><span class="pl-k">SELECT</span> CONCAT(table_schema, <span class="pl-s"><span class="pl-pds">"</span>.<span class="pl-pds">"</span></span>, table_name),
+CONCAT(ROUND(table_rows <span class="pl-k">/</span> <span class="pl-c1">1000000</span>, <span class="pl-c1">2</span>), <span class="pl-s"><span class="pl-pds">"</span>M<span class="pl-pds">"</span></span>) rows, 
+CONCAT(ROUND(data_length <span class="pl-k">/</span> ( <span class="pl-c1">1024</span> <span class="pl-k">*</span> <span class="pl-c1">1024</span> <span class="pl-k">*</span> <span class="pl-c1">1024</span> ), <span class="pl-c1">2</span>), <span class="pl-s"><span class="pl-pds">"</span>G<span class="pl-pds">"</span></span>) DATA, 
+CONCAT(ROUND(index_length <span class="pl-k">/</span> ( <span class="pl-c1">1024</span> <span class="pl-k">*</span> <span class="pl-c1">1024</span> <span class="pl-k">*</span> <span class="pl-c1">1024</span> ), <span class="pl-c1">2</span>), <span class="pl-s"><span class="pl-pds">"</span>G<span class="pl-pds">"</span></span>) idx, 
+CONCAT(ROUND(( data_length  <span class="pl-k">+</span> index_length ) <span class="pl-k">/</span> ( <span class="pl-c1">1024</span> <span class="pl-k">*</span> <span class="pl-c1">1024</span> <span class="pl-k">*</span> <span class="pl-c1">1024</span> ), <span class="pl-c1">2</span>), <span class="pl-s"><span class="pl-pds">"</span>G<span class="pl-pds">"</span></span>) total_size, 
+ROUND(index_length <span class="pl-k">/</span> data_length, <span class="pl-c1">2</span>) idxfrac 
+<span class="pl-k">FROM</span> <span class="pl-c1">information_schema</span>.<span class="pl-c1">TABLES</span> 
+<span class="pl-k">ORDER BY</span> data_length <span class="pl-k">+</span> index_length <span class="pl-k">DESC</span> 
+<span class="pl-k">LIMIT</span> <span class="pl-c1">10</span>;</pre></div>
+
+<hr>
+
+<h1>
 <a id="screen-to-open-serial-connection" class="anchor" href="#screen-to-open-serial-connection" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screen to open serial connection</h1>
 
 <h5>
@@ -271,7 +292,7 @@ setjdk 1.9</pre></div>
 <a id="nov-12-2014-1" class="anchor" href="#nov-12-2014-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Nov 12, 2014)</h5>
 
 <h6>
-<a id="mysql" class="anchor" href="#mysql" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL</h6>
+<a id="mysql-1" class="anchor" href="#mysql-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL</h6>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-k">export</span> MYSQL_PS1=<span class="pl-s"><span class="pl-pds">"</span>\u@\d&gt; <span class="pl-pds">"</span></span></pre></div>
 
@@ -435,7 +456,7 @@ view all     included  .1</pre></div>
 <a id="sep-16-2013-2" class="anchor" href="#sep-16-2013-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Sep 16, 2013)</h5>
 
 <h6>
-<a id="mysql-1" class="anchor" href="#mysql-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL</h6>
+<a id="mysql-2" class="anchor" href="#mysql-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MySQL</h6>
 
 <p><em>my.cnf.51</em></p>
 
