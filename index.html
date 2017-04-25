@@ -39,6 +39,21 @@
         </div>
 
         <h1>
+<a id="ad-blocking-on-mikrotik-router" class="anchor" href="#ad-blocking-on-mikrotik-router" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ad blocking on Mikrotik router</h1>
+
+<h5>
+<a id="apr-25-2017" class="anchor" href="#apr-25-2017" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(Apr 25, 2017)</h5>
+
+<h6>
+<a id="routeros" class="anchor" href="#routeros" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>RouterOS</h6>
+
+<div class="highlight highlight-source-shell"><pre>/system script add name=<span class="pl-s"><span class="pl-pds">"</span>Squid_Blacklist<span class="pl-pds">"</span></span> source=<span class="pl-s"><span class="pl-pds">"</span>/tool fetch url=<span class="pl-cce">\"</span>http://www.squidblacklist.org/downloads/tik-dns-ads.rsc<span class="pl-cce">\"</span> dst-path=ads.rsc; /import file-name=ads.rsc;<span class="pl-pds">"</span></span>
+
+/system scheduler add comment=<span class="pl-s"><span class="pl-pds">"</span>Squid_Blacklist<span class="pl-pds">"</span></span> interval=1d name=<span class="pl-s"><span class="pl-pds">"</span>DownloadSquidBlacklist<span class="pl-pds">"</span></span> on-event=Squid_Blacklist start-date=jan/01/1970 start-time=20:00:00</pre></div>
+
+<hr>
+
+<h1>
 <a id="wildcards-in-ssh-known_hosts" class="anchor" href="#wildcards-in-ssh-known_hosts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wildcards in SSH known_hosts</h1>
 
 <h5>
@@ -302,7 +317,7 @@ Intel(R) Core(TM) i7-3770S CPU @ 3.10GHz</pre></div>
 }
 
 <span class="pl-k">function</span> <span class="pl-en">removeFromPath()</span> {
-  <span class="pl-k">export</span> PATH=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s"><span class="pl-pds">$(</span><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$PATH</span><span class="pl-pds">"</span></span> <span class="pl-k">|</span> sed -E -e <span class="pl-s"><span class="pl-pds">"</span>s;:<span class="pl-smi">$1</span>;;<span class="pl-pds">"</span></span> -e <span class="pl-s"><span class="pl-pds">"</span>s;<span class="pl-smi">$1</span>:?;;<span class="pl-pds">"</span></span><span class="pl-pds">)</span></span><span class="pl-pds">"</span></span>
+  <span class="pl-k">export</span> PATH=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-s"><span class="pl-pds">$(</span>echo <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$PATH</span><span class="pl-pds">"</span></span> <span class="pl-k">|</span> sed -E -e <span class="pl-s"><span class="pl-pds">"</span>s;:<span class="pl-smi">$1</span>;;<span class="pl-pds">"</span></span> -e <span class="pl-s"><span class="pl-pds">"</span>s;<span class="pl-smi">$1</span>:?;;<span class="pl-pds">"</span></span><span class="pl-pds">)</span></span><span class="pl-pds">"</span></span>
 }
 
 setjdk 1.9</pre></div>
@@ -333,7 +348,7 @@ setjdk 1.9</pre></div>
 <h6>
 <a id="git-1" class="anchor" href="#git-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git</h6>
 
-<div class="highlight highlight-source-shell"><pre>git config --global <span class="pl-c1">alias</span>.lg <span class="pl-s"><span class="pl-pds">"</span>log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all<span class="pl-pds">"</span></span></pre></div>
+<div class="highlight highlight-source-shell"><pre>git config --global alias.lg <span class="pl-s"><span class="pl-pds">"</span>log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all<span class="pl-pds">"</span></span></pre></div>
 
 <div class="highlight highlight-source-shell"><pre>git lg</pre></div>
 
@@ -361,15 +376,15 @@ setjdk 1.9</pre></div>
 <h6>
 <a id="shell-1" class="anchor" href="#shell-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>shell</h6>
 
-<div class="highlight highlight-source-shell"><pre><span class="pl-c"># First column: Lines unique to file1</span>
-<span class="pl-c"># Second column: Lines unique to file2</span>
-<span class="pl-c"># Third column: Lines common to both files</span>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> First column: Lines unique to file1</span>
+<span class="pl-c"><span class="pl-c">#</span> Second column: Lines unique to file2</span>
+<span class="pl-c"><span class="pl-c">#</span> Third column: Lines common to both files</span>
 $ comm file1 file2</pre></div>
 
-<div class="highlight highlight-source-shell"><pre><span class="pl-c"># Hide all columns (1, 2 &amp; 3; which makes no sense!)</span>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> Hide all columns (1, 2 &amp; 3; which makes no sense!)</span>
 $ comm -123 file1 file2
 
-<span class="pl-c"># Only show common lines</span>
+<span class="pl-c"><span class="pl-c">#</span> Only show common lines</span>
 $ comm -12 file1 file2</pre></div>
 
 <hr>
@@ -422,8 +437,8 @@ view all     included  .1</pre></div>
 <h6>
 <a id="windows" class="anchor" href="#windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Windows</h6>
 
-<div class="highlight highlight-text-xml"><pre><span class="pl-c">&lt;!-- The following should be saved in C:\Windows\System32\WindowsPowershell\v1.0\ (or the correct path to Windows Powershell)</span>
-<span class="pl-c"> as a file named "powershell.exe.config" --&gt;</span>
+<div class="highlight highlight-text-xml"><pre><span class="pl-c"><span class="pl-c">&lt;!--</span> The following should be saved in C:\Windows\System32\WindowsPowershell\v1.0\ (or the correct path to Windows Powershell)</span>
+<span class="pl-c"> as a file named "powershell.exe.config" <span class="pl-c">--&gt;</span></span>
 &lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span>?&gt;
 &lt;<span class="pl-ent">configuration</span>&gt;
     &lt;<span class="pl-ent">startup</span> <span class="pl-e">useLegacyV2RuntimeActivationPolicy</span>=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>&gt;
