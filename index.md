@@ -1,3 +1,15 @@
+# Fix gigantic Zoom windows
+##### (Aug 28, 2020)
+###### Linux, Zoom
+
+```
+nano ~/.config/zoomus.conf
+```
+
+Change `autoScale=true` to `autoScale=false`
+
+---
+
 # Ad blocking on Mikrotik router
 ##### (Apr 25, 2017)
 ###### RouterOS
