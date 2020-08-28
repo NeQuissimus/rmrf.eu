@@ -1,0 +1,8 @@
+title: rm -rf /
+description: by NeQuissimus
+google_analytics: UA-31449022-1
+show_downloads: true
+theme: jekyll-theme-midnight
+
+gems:
+  - jekyll-mentions
